@@ -1,0 +1,844 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "platformNum": 1,
+        "direction": "Westbound",
+        "busName": [
+          "Trafalgar Road & Hwy 407/ Hamilton GO",
+          "Trafalgar Road & Hwy 407/ Hamilton GO"
+        ],
+        "buses": [
+          "40",
+          "40A"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.64728742837906,
+          43.59450324938348
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "platformNum": 2,
+        "direction": "Westbound",
+        "busName": [
+          "n/a"
+        ],
+        "buses": [
+          "47",
+          "46",
+          "46A"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.64756369590759,
+          43.59465671124928
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "platformNum": 3,
+        "direction": "Westbound",
+        "busName": [
+          "n/a"
+        ],
+        "buses": [
+          "47B"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.64782118797302,
+          43.59481211527152
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "platformNum": 4,
+        "direction": "Westbound",
+        "busName": [
+          "n/a"
+        ],
+        "buses": [
+          "21",
+          "21A",
+          "P",
+          "45"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.64814573526382,
+          43.59500248465185
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "platformNum": 5,
+        "direction": "Westbound",
+        "busName": [
+          "Guelph/Mississauga",
+          "Guelph/Mississauga"
+        ],
+        "buses": [
+          "29",
+          "29B"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.64846760034561,
+          43.595181198215926
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "platformNum": 6,
+        "direction": "Westbound",
+        "busName": [
+          "Waterloo/Mississauga",
+          "Waterloo/Mississauga"
+        ],
+        "buses": [
+          "25",
+          "25C"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.64876532554625,
+          43.595350198598055
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "platformNum": 8,
+        "direction": "Eastbound",
+        "busName": [
+          "Hwy 407",
+          "Hwy 407",
+          "Hwy 407"
+        ],
+        "buses": [
+          "45",
+          "45A",
+          "47A"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.64857757091522,
+          43.59509572657757
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "platformNum": 9,
+        "direction": "Eastbound",
+        "busName": [
+          "Hwy 407",
+          "Hwy 407"
+        ],
+        "buses": [
+          "46",
+          "47"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.64826107025145,
+          43.59491701275966
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "platformNum": 10,
+        "direction": "Eastbound",
+        "busName": [
+          "Pearson Airport/Richmond Hill",
+          "Pearson Airport/Richmond Hill"
+        ],
+        "buses": [
+          "40",
+          "40A"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.64794188737869,
+          43.594740240961116
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "platformNum": 11,
+        "direction": "Eastbound",
+        "busName": [
+          "Oakville/North York",
+          "Oakville/North York",
+          "Oakville/North York"
+        ],
+        "buses": [
+          "19A",
+          "19B",
+          "19C"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.6476736664772,
+          43.594582894198126
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "platformNum": 12,
+        "direction": "Eastbound",
+        "busName": [
+          "Union Station",
+          "Union Station",
+          "Union Station",
+          "Union Station",
+          "Union Station",
+          "Union Station"
+        ],
+        "buses": [
+          "21",
+          "21A",
+          "21H",
+          "21J",
+          "21K",
+          "21P"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.6474027633667,
+          43.594419719342696
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "stationName": "Square One GO Bus Terminal— BUS TERMINAL",
+        "url": "http://www.gotransit.com/publicroot/en/travelling/stations.aspx?station=S1TM"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -79.64882165193558,
+              43.5954512100941
+            ],
+            [
+              -79.6490254998207,
+              43.59528026746302
+            ],
+            [
+              -79.64737594127655,
+              43.594349787126326
+            ],
+            [
+              -79.64719086885452,
+              43.594526560071834
+            ],
+            [
+              -79.64882165193558,
+              43.5954512100941
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "platformNum": 1,
+        "direction": "n/a",
+        "busName": [
+          "Unloading"
+        ],
+        "buses": []
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.50252592563629,
+          43.77275948396966
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "platformNum": 2,
+        "direction": "Westbound",
+        "busName": [
+          "Meadowvale express",
+          "Waterloo/Hwy 407/York University"
+        ],
+        "buses": [
+          "48A",
+          "25F"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.5021665096283,
+          43.77283695568777
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "platformNum": 3,
+        "direction": "Westbound",
+        "busName": [
+          "Bramalea/Meadowvale/U of Guelph",
+          "Bramalea/Meadowvale/U of Guelph",
+          "Bramalea/Meadowvale/U of Guelph",
+          "McMaster"
+        ],
+        "buses": [
+          "48",
+          "48B",
+          "48F",
+          "47F"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.5017158985138,
+          43.772933795194234
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "platformNum": 4,
+        "direction": "Westbound",
+        "busName": [
+          "Sheridan College/Oakville",
+          "Hamilton, Bramalea, Square One, Oakville, Bronte, McMaster"
+        ],
+        "buses": [
+          "46",
+          "47"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.50102925300598,
+          43.773108105910765
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "platformNum": 5,
+        "direction": "Westbound",
+        "busName": [
+          "Square One/Streetsville",
+          "Square One/Streetsville"
+        ],
+        "buses": [
+          "45",
+          "45A"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.5004016160965,
+          43.77324368056125
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "platformNum": 6,
+        "direction": "Eastbound",
+        "busName": [
+          "Richmond Hill/Scarborough Centre/Centennial College/UofT Scarborough/Pickering",
+          "Scarborough GO Terminal",
+          "Centennial College, UofT Scarborough"
+        ],
+        "buses": [
+          "51",
+          "51A",
+          "51C"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.50017631053925,
+          43.77328628967364
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "platformNum": 7,
+        "direction": "Eastbound",
+        "busName": [
+          "Pickering GO express",
+          "Markham/Mount Joy"
+        ],
+        "buses": [
+          "51B",
+          "54C"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.49985980987549,
+          43.773352140060325
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "platformNum": 8,
+        "direction": "Eastbound",
+        "busName": [
+          "Richmond Hill Centre/Unionville/Brooklin/UOIT/Durham College/Oshawa",
+          "Richmond Hill Centre/UOIT/Durham College",
+          "Richmond Hill Centre"
+        ],
+        "buses": [
+          "52",
+          "52B",
+          "54"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.4996452331543,
+          43.773402496189476
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "stationName": "York University Bus Loop— BUS STOP",
+        "url": "http://www.gotransit.com/publicroot/en/travelling/stations.aspx?station=YRKU"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -79.50265198945999,
+              43.772800156634176
+            ],
+            [
+              -79.5026171207428,
+              43.77270138011523
+            ],
+            [
+              -79.49952721595764,
+              43.773410243282505
+            ],
+            [
+              -79.49955940246582,
+              43.77348577738694
+            ],
+            [
+              -79.50265198945999,
+              43.772800156634176
+            ]
+          ]
+        ]
+      }
+    },
+        {
+      "type": "Feature",
+      "properties": {
+        "platformNum": 1,
+        "direction": "Eastbound",
+        "busName": [
+          "Waterloo/Mississauga",
+          "Waterloo/Mississauga",
+          "Waterloo/Mississauga",
+          "Waterloo/Mississauga/York University/Hwy 407/Milton"
+        ],
+        "buses": [
+          "25",
+          "25B",
+          "25C",
+          "25F"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -80.54171562194823,
+          43.473091607899036
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "platformNum": 1,
+        "direction": "Eastbound",
+        "busName": [
+          "Waterloo/Mississauga",
+          "Waterloo/Mississauga",
+          "Waterloo/Mississauga",
+          "Waterloo/Mississauga/York University/Hwy 407/Milton"
+        ],
+        "buses": [
+          "25",
+          "25C",
+          "25D",
+          "25F"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -80.52731484174728,
+          43.47526967144757
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "platformNum": 1,
+        "direction": "Eastbound",
+        "busName": [
+          "Waterloo/Mississauga",
+          "Bramalea/Kitchener"
+        ],
+        "buses": [
+          "25",
+          "30"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -80.49197673797607,
+          43.44967879547074
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "platformNum": 2,
+        "direction": "Eastbound",
+        "busName": [
+          "Bramalea/Kitchener"
+        ],
+        "buses": [
+          "30"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -80.49282968044281,
+          43.45561754467013
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "stationName": "University of Waterloo— BUS STOP",
+        "url": "http://www.gotransit.com/publicroot/en/travelling/stations.aspx?station=WUNI"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -80.54190069437027,
+              43.47320839614005
+            ],
+            [
+              -80.54178535938263,
+              43.47304099959119
+            ],
+            [
+              -80.54158955812454,
+              43.47311301909347
+            ],
+            [
+              -80.54173439741135,
+              43.473262897241945
+            ],
+            [
+              -80.54190069437027,
+              43.47320839614005
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "stationName": "Wilfrid Laurier Univ.— BUS STOP",
+        "url": "http://www.gotransit.com/publicroot/en/travelling/stations.aspx?station=WLLR"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -80.52741140127182,
+              43.47526577864263
+            ],
+            [
+              -80.52736043930054,
+              43.47518986889604
+            ],
+            [
+              -80.52720218896866,
+              43.47524631461413
+            ],
+            [
+              -80.52724778652191,
+              43.47532027788907
+            ],
+            [
+              -80.52741140127182,
+              43.47526577864263
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "stationName": "Kitchener Bus Terminal— BUS TERMINAL",
+        "url": "http://www.gotransit.com/publicroot/en/travelling/stations.aspx?station=KITB"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -80.49206793308258,
+              43.4496846371499
+            ],
+            [
+              -80.49192577600479,
+              43.449630114788974
+            ],
+            [
+              -80.4918909072876,
+              43.449680742697204
+            ],
+            [
+              -80.49203842878342,
+              43.449725528888386
+            ],
+            [
+              -80.49206793308258,
+              43.4496846371499
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "stationName": "Kitchener GO Station— TRAIN STATION",
+        "url": "http://www.gotransit.com/publicroot/en/travelling/stations.aspx?station=KITC"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -80.49291551113129,
+              43.45563896205446
+            ],
+            [
+              -80.49288600683212,
+              43.45558055098845
+            ],
+            [
+              -80.49274653196335,
+              43.45562143874058
+            ],
+            [
+              -80.49278140068054,
+              43.455683743833525
+            ],
+            [
+              -80.49291551113129,
+              43.45563896205446
+            ]
+          ]
+        ]
+      }
+    },
+      {
+      "type": "Feature",
+      "properties": {
+        "platformNum": 9,
+        "direction": "Westbound",
+        "busName": [
+          "407 East",
+          "407 East",
+          "407 East",
+          "407 East"
+        ],
+        "buses": [
+          "51",
+          "52",
+          "52B",
+          "54"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.42539364099503,
+          43.84031540126628
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "platformNum": 10,
+        "direction": "Westbound",
+        "busName": [
+          "Pearson Airport/Square One/Hamilton GO"
+        ],
+        "buses": [
+          "40"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.42526757717133,
+          43.84016643649306
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "platformNum": 11,
+        "direction": "Eastbound",
+        "busName": [
+          "407 East",
+          "407 East",
+          "407 East",
+          "407 East",
+          "407 East"
+        ],
+        "buses": [
+          "51",
+          "51D",
+          "52",
+          "52B",
+          "54"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.42517101764679,
+          43.840050359788556
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "stationName": "Richmond Hill GO Station— TRAIN & BUS STATION",
+        "url": "http://www.gotransit.com/publicroot/en/travelling/stations.aspx?station=RHGO"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -79.42556530237198,
+              43.84036183176892
+            ],
+            [
+              -79.42515760660172,
+              43.83984722501231
+            ],
+            [
+              -79.42512273788452,
+              43.84002134057716
+            ],
+            [
+              -79.42543119192123,
+              43.840412131439344
+            ],
+            [
+              -79.42556530237198,
+              43.84036183176892
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

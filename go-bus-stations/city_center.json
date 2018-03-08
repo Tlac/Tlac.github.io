@@ -1,0 +1,292 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "platformNum": 1,
+        "direction": "Westbound",
+        "busName": [
+          "Trafalgar Road & Hwy 407/ Hamilton GO",
+          "Trafalgar Road & Hwy 407/ Hamilton GO"
+        ],
+        "buses": [
+          "40",
+          "40A"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.64728742837906,
+          43.59450324938348
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "platformNum": 2,
+        "direction": "Westbound",
+        "busName": [
+          "n/a"
+        ],
+        "buses": [
+          "47",
+          "46",
+          "46A"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.64756369590759,
+          43.59465671124928
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "platformNum": 3,
+        "direction": "Westbound",
+        "busName": [
+          "n/a"
+        ],
+        "buses": [
+          "47B"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.64782118797302,
+          43.59481211527152
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "platformNum": 4,
+        "direction": "Westbound",
+        "busName": [
+          "n/a"
+        ],
+        "buses": [
+          "21",
+          "21A",
+          "21P",
+          "45"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.64814573526382,
+          43.59500248465185
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "platformNum": 5,
+        "direction": "Westbound",
+        "busName": [
+          "Guelph/Mississauga",
+          "Guelph/Mississauga"
+        ],
+        "buses": [
+          "29",
+          "29B"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.64846760034561,
+          43.595181198215926
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "platformNum": 6,
+        "direction": "Westbound",
+        "busName": [
+          "Waterloo/Mississauga",
+          "Waterloo/Mississauga"
+        ],
+        "buses": [
+          "25",
+          "25C"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.64876532554625,
+          43.595350198598055
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "platformNum": 8,
+        "direction": "Eastbound",
+        "busName": [
+          "Hwy 407",
+          "Hwy 407",
+          "Hwy 407"
+        ],
+        "buses": [
+          "45",
+          "45A",
+          "47A"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.64857757091522,
+          43.59509572657757
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "platformNum": 9,
+        "direction": "Eastbound",
+        "busName": [
+          "Hwy 407",
+          "Hwy 407"
+        ],
+        "buses": [
+          "46",
+          "47"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.64826107025145,
+          43.59491701275966
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "platformNum": 10,
+        "direction": "Eastbound",
+        "busName": [
+          "Pearson Airport/Richmond Hill",
+          "Pearson Airport/Richmond Hill"
+        ],
+        "buses": [
+          "40",
+          "40A"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.64794188737869,
+          43.594740240961116
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "platformNum": 11,
+        "direction": "Eastbound",
+        "busName": [
+          "Oakville/North York",
+          "Oakville/North York",
+          "Oakville/North York"
+        ],
+        "buses": [
+          "19A",
+          "19B",
+          "19C"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.6476736664772,
+          43.594582894198126
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "platformNum": 12,
+        "direction": "Eastbound",
+        "busName": [
+          "Union Station",
+          "Union Station",
+          "Union Station",
+          "Union Station",
+          "Union Station",
+          "Union Station"
+        ],
+        "buses": [
+          "21",
+          "21A",
+          "21H",
+          "21J",
+          "21K",
+          "21P"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.6474027633667,
+          43.594419719342696
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "stationName": "Square One GO Bus Terminal— BUS TERMINAL",
+        "url": "http://www.gotransit.com/publicroot/en/travelling/stations.aspx?station=S1TM"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -79.64882165193558,
+              43.5954512100941
+            ],
+            [
+              -79.6490254998207,
+              43.59528026746302
+            ],
+            [
+              -79.64737594127655,
+              43.594349787126326
+            ],
+            [
+              -79.64719086885452,
+              43.594526560071834
+            ],
+            [
+              -79.64882165193558,
+              43.5954512100941
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

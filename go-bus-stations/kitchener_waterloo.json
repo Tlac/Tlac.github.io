@@ -1,0 +1,235 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "platformNum": 1,
+        "direction": "Eastbound",
+        "busName": [
+          "Waterloo/Mississauga",
+          "Waterloo/Mississauga",
+          "Waterloo/Mississauga",
+          "Waterloo/Mississauga/York University/Hwy 407/Milton"
+        ],
+        "buses": [
+          "25",
+          "25B",
+          "25C",
+          "25F"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -80.54171562194823,
+          43.473091607899036
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "platformNum": 1,
+        "direction": "Eastbound",
+        "busName": [
+          "Waterloo/Mississauga",
+          "Waterloo/Mississauga",
+          "Waterloo/Mississauga",
+          "Waterloo/Mississauga/York University/Hwy 407/Milton"
+        ],
+        "buses": [
+          "25",
+          "25C",
+          "25D",
+          "25F"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -80.52731484174728,
+          43.47526967144757
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "platformNum": 1,
+        "direction": "Eastbound",
+        "busName": [
+          "Waterloo/Mississauga",
+          "Bramalea/Kitchener"
+        ],
+        "buses": [
+          "25",
+          "30"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -80.49197673797607,
+          43.44967879547074
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "platformNum": 2,
+        "direction": "Eastbound",
+        "busName": [
+          "Bramalea/Kitchener"
+        ],
+        "buses": [
+          "30"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -80.49282968044281,
+          43.45561754467013
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "stationName": "University of Waterloo— BUS STOP",
+        "url": "http://www.gotransit.com/publicroot/en/travelling/stations.aspx?station=WUNI"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -80.54190069437027,
+              43.47320839614005
+            ],
+            [
+              -80.54178535938263,
+              43.47304099959119
+            ],
+            [
+              -80.54158955812454,
+              43.47311301909347
+            ],
+            [
+              -80.54173439741135,
+              43.473262897241945
+            ],
+            [
+              -80.54190069437027,
+              43.47320839614005
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "stationName": "Wilfrid Laurier Univ.— BUS STOP",
+        "url": "http://www.gotransit.com/publicroot/en/travelling/stations.aspx?station=WLLR"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -80.52741140127182,
+              43.47526577864263
+            ],
+            [
+              -80.52736043930054,
+              43.47518986889604
+            ],
+            [
+              -80.52720218896866,
+              43.47524631461413
+            ],
+            [
+              -80.52724778652191,
+              43.47532027788907
+            ],
+            [
+              -80.52741140127182,
+              43.47526577864263
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "stationName": "Kitchener Bus Terminal— BUS TERMINAL",
+        "url": "http://www.gotransit.com/publicroot/en/travelling/stations.aspx?station=KITB"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -80.49206793308258,
+              43.4496846371499
+            ],
+            [
+              -80.49192577600479,
+              43.449630114788974
+            ],
+            [
+              -80.4918909072876,
+              43.449680742697204
+            ],
+            [
+              -80.49203842878342,
+              43.449725528888386
+            ],
+            [
+              -80.49206793308258,
+              43.4496846371499
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "stationName": "Kitchener GO Station— TRAIN STATION",
+        "url": "http://www.gotransit.com/publicroot/en/travelling/stations.aspx?station=KITC"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -80.49291551113129,
+              43.45563896205446
+            ],
+            [
+              -80.49288600683212,
+              43.45558055098845
+            ],
+            [
+              -80.49274653196335,
+              43.45562143874058
+            ],
+            [
+              -80.49278140068054,
+              43.455683743833525
+            ],
+            [
+              -80.49291551113129,
+              43.45563896205446
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

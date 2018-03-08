@@ -1,0 +1,113 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "platformNum": 9,
+        "direction": "Westbound",
+        "busName": [
+          "407 East",
+          "407 East",
+          "407 East",
+          "407 East"
+        ],
+        "buses": [
+          "51",
+          "52",
+          "52B",
+          "54"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.42539364099503,
+          43.84031540126628
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "platformNum": 10,
+        "direction": "Westbound",
+        "busName": [
+          "Pearson Airport/Square One/Hamilton GO"
+        ],
+        "buses": [
+          "40"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.42526757717133,
+          43.84016643649306
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "platformNum": 11,
+        "direction": "Eastbound",
+        "busName": [
+          "407 East",
+          "407 East",
+          "407 East",
+          "407 East",
+          "407 East"
+        ],
+        "buses": [
+          "51",
+          "51D",
+          "52",
+          "52B",
+          "54"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.42517101764679,
+          43.840050359788556
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "stationName": "Richmond Hill GO Station— TRAIN & BUS STATION",
+        "url": "http://www.gotransit.com/publicroot/en/travelling/stations.aspx?station=RHGO"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -79.42556530237198,
+              43.84036183176892
+            ],
+            [
+              -79.42515760660172,
+              43.83984722501231
+            ],
+            [
+              -79.42512273788452,
+              43.84002134057716
+            ],
+            [
+              -79.42543119192123,
+              43.840412131439344
+            ],
+            [
+              -79.42556530237198,
+              43.84036183176892
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}
