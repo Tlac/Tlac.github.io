@@ -11,7 +11,7 @@ L.tileLayer('https://stamen-tiles-{s}.a.ssl.fastly.net/toner/{z}/{x}/{y}.{ext}',
 }).addTo(mymap);
 
 
-var InfoBox = L.control({position: 'topleft'});
+var InfoBox = L.control({position: 'topright'});
 
 InfoBox.onAdd = function(map){
     var div = L.DomUtil.create('div', 'info legend');
@@ -65,7 +65,7 @@ var StationPolys = new L.geoJson(StationPolys, {
 // Leaflet search
 var markersLayer = new L.LayerGroup();	//layer contain searched elements
 mymap.addLayer(markersLayer);
-var controlSearch = new L.Control.Search({layer: markersLayer, initial: false, position:'topright'});
+var controlSearch = new L.Control.Search({layer: markersLayer, initial: false, position:'topleft'});
 mymap.addControl( controlSearch );
 
 // populate map with markers from sample data, also formatting lat long, geojson
