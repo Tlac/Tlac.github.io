@@ -54,7 +54,17 @@ mymap.addControl( controlSearch );
 controlSearch.on('search:locationfound', function (event) {
 	event.layer.openPopup();
 });
+// Custom marker
+var busIcon = new L.Icon({
+  iconUrl: './images/busIcon.png',
+  shadowUrl: './images/marker-shadow.png',
 
+  iconSize:     [16, 16], // size of the icon
+  shadowSize:   [0, 0], // size of the shadow
+  iconAnchor:   [0, 8], // point of the icon which will correspond to marker's location
+  shadowAnchor: [0, 0], // the same for the shadow
+  popupAnchor:  [8, -5]  // point from which the popup should open relative to the iconAnchor
+});
 // populate map with markers from sample data, also formatting lat long, geojson
 var pointArray = PlatformPoints.features
 for(i in pointArray) {
@@ -65,7 +75,7 @@ for(i in pointArray) {
         title += '<br> Buses: ' + pointArray[i].properties.buses[differentBuses] + ' ' + pointArray[i].properties.busName[differentBuses];	//value searched
         searchTerm += pointArray[i].properties.buses[differentBuses] + ' ' + pointArray[i].properties.busName[differentBuses] + ' ';
     }
-    marker = new L.Marker(new L.latLng(loc), {title: searchTerm} );//se property searched
+    marker = new L.Marker(new L.latLng(loc), {title: searchTerm, icon: busIcon} );//se property searched
     marker.bindPopup(title);
     markersLayer.addLayer(marker);
 }
