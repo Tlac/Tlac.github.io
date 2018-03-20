@@ -58,14 +58,16 @@ controlSearch.on('search:locationfound', function (event) {
 // populate map with markers from sample data, also formatting lat long, geojson
 var pointArray = PlatformPoints.features
 for(i in pointArray) {
+    var title = 'Platform Number: ' + String(pointArray[i].properties.platformNum);
+    var searchTerm = pointArray[i].properties.area + ' ';
     loc = pointArray[i].geometry.coordinates.reverse()		//position found, this needs to be checked out.
     for (differentBuses in pointArray[i].properties.busName) {
-        var title = String('Platform Number: ' + String(pointArray[i].properties.platformNum) + '<br>Buses: ' + pointArray[i].properties.buses[differentBuses] + ' ' + pointArray[i].properties.busName[differentBuses]),	//value searched
-
-            marker = new L.Marker(new L.latLng(loc), {title: title} );//se property searched
-        marker.bindPopup(title);
-        markersLayer.addLayer(marker);
+        title += '<br> Buses: ' + pointArray[i].properties.buses[differentBuses] + ' ' + pointArray[i].properties.busName[differentBuses];	//value searched
+        searchTerm += pointArray[i].properties.buses[differentBuses] + ' ' + pointArray[i].properties.busName[differentBuses] + ' ';
     }
+    marker = new L.Marker(new L.latLng(loc), {title: searchTerm} );//se property searched
+    marker.bindPopup(title);
+    markersLayer.addLayer(marker);
 }
 
 $('#textsearch').on('keyup', function(e) {

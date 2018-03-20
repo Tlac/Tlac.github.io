@@ -13,7 +13,8 @@ var PlatformPoints = {
             "buses":[
                "40",
                "40A"
-            ]
+            ],
+            "area": "City Center"
          },
          "geometry":{
             "type":"Point",
@@ -35,7 +36,8 @@ var PlatformPoints = {
                "47",
                "46",
                "46A"
-            ]
+            ],
+            "area": "City Center"
          },
          "geometry":{
             "type":"Point",
@@ -55,7 +57,8 @@ var PlatformPoints = {
             ],
             "buses":[
                "47B"
-            ]
+            ],
+            "area": "City Center"
          },
          "geometry":{
             "type":"Point",
@@ -78,7 +81,8 @@ var PlatformPoints = {
                "21A",
                "P",
                "45"
-            ]
+            ],
+            "area": "City Center"
          },
          "geometry":{
             "type":"Point",
@@ -100,7 +104,8 @@ var PlatformPoints = {
             "buses":[
                "29",
                "29B"
-            ]
+            ],
+            "area": "City Center"
          },
          "geometry":{
             "type":"Point",
@@ -122,7 +127,8 @@ var PlatformPoints = {
             "buses":[
                "25",
                "25C"
-            ]
+            ],
+            "area": "City Center"
          },
          "geometry":{
             "type":"Point",
@@ -146,7 +152,8 @@ var PlatformPoints = {
                "45",
                "45A",
                "47A"
-            ]
+            ],
+            "area": "City Center"
          },
          "geometry":{
             "type":"Point",
@@ -168,7 +175,8 @@ var PlatformPoints = {
             "buses":[
                "46",
                "47"
-            ]
+            ],
+            "area": "City Center"
          },
          "geometry":{
             "type":"Point",
@@ -190,7 +198,8 @@ var PlatformPoints = {
             "buses":[
                "40",
                "40A"
-            ]
+            ],
+            "area": "City Center"
          },
          "geometry":{
             "type":"Point",
@@ -214,7 +223,8 @@ var PlatformPoints = {
                "19A",
                "19B",
                "19C"
-            ]
+            ],
+            "area": "City Center"
          },
          "geometry":{
             "type":"Point",
@@ -244,7 +254,8 @@ var PlatformPoints = {
                "21J",
                "21K",
                "21P"
-            ]
+            ],
+            "area": "City Center"
          },
          "geometry":{
             "type":"Point",
@@ -264,7 +275,8 @@ var PlatformPoints = {
             ],
             "buses":[
 
-            ]
+            ],
+            "area": "York University"
          },
          "geometry":{
             "type":"Point",
@@ -286,7 +298,8 @@ var PlatformPoints = {
             "buses":[
                "48A",
                "25F"
-            ]
+            ],
+            "area": "York University"
          },
          "geometry":{
             "type":"Point",
@@ -312,7 +325,8 @@ var PlatformPoints = {
                "48B",
                "48F",
                "47F"
-            ]
+            ],
+            "area": "York University"
          },
          "geometry":{
             "type":"Point",
@@ -334,7 +348,8 @@ var PlatformPoints = {
             "buses":[
                "46",
                "47"
-            ]
+            ],
+            "area": "York University"
          },
          "geometry":{
             "type":"Point",
@@ -356,7 +371,8 @@ var PlatformPoints = {
             "buses":[
                "45",
                "45A"
-            ]
+            ],
+            "area": "York University"
          },
          "geometry":{
             "type":"Point",
@@ -380,7 +396,8 @@ var PlatformPoints = {
                "51",
                "51A",
                "51C"
-            ]
+            ],
+            "area": "York University"
          },
          "geometry":{
             "type":"Point",
@@ -402,7 +419,8 @@ var PlatformPoints = {
             "buses":[
                "51B",
                "54C"
-            ]
+            ],
+            "area": "York University"
          },
          "geometry":{
             "type":"Point",
@@ -426,7 +444,8 @@ var PlatformPoints = {
                "52",
                "52B",
                "54"
-            ]
+            ],
+            "area": "York University"
          },
          "geometry":{
             "type":"Point",
@@ -452,7 +471,8 @@ var PlatformPoints = {
                "25B",
                "25C",
                "25F"
-            ]
+            ],
+            "area": "University of Waterloo"
          },
          "geometry":{
             "type":"Point",
@@ -478,7 +498,8 @@ var PlatformPoints = {
                "25C",
                "25D",
                "25F"
-            ]
+            ],
+            "area": "Wilfrid Laurier University"
          },
          "geometry":{
             "type":"Point",
@@ -500,7 +521,8 @@ var PlatformPoints = {
             "buses":[
                "25",
                "30"
-            ]
+            ],
+            "area": "Kitchener Bus Station"
          },
          "geometry":{
             "type":"Point",
@@ -520,7 +542,8 @@ var PlatformPoints = {
             ],
             "buses":[
                "30"
-            ]
+            ],
+            "area": "Kitchener GO Train Station"
          },
          "geometry":{
             "type":"Point",
@@ -546,7 +569,8 @@ var PlatformPoints = {
                "52",
                "52B",
                "54"
-            ]
+            ],
+            "area": "Richmond Hill Centre Terminal"
          },
          "geometry":{
             "type":"Point",
@@ -566,7 +590,8 @@ var PlatformPoints = {
             ],
             "buses":[
                "40"
-            ]
+            ],
+            "area": "Richmond Hill Centre Terminal"
          },
          "geometry":{
             "type":"Point",
@@ -594,7 +619,8 @@ var PlatformPoints = {
                "52",
                "52B",
                "54"
-            ]
+            ],
+            "area": "Richmond Hill Centre Terminal"
          },
          "geometry":{
             "type":"Point",
