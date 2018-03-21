@@ -20,9 +20,9 @@ navigator.geolocation.getCurrentPosition(function(location) {
     // Set up info box
     var InfoBox = L.control({position: 'topright'});
 
-    InfoBox.onAdd = function(map){
+    InfoBox.onAdd = function(map) {
         var div = L.DomUtil.create('div', 'info legend');
-        div.innerHTML = '<p class="Info"><big>GO Bus Platform Routing App</big><br>- Scroll to ZOOM<br>- blah blah blah</p>'
+        div.innerHTML = '<p class="Info"><big>Where to GO Bus Platform Routing App</big><br>- Search for your bus in the top left search bar<br>- Scroll to ZOOM</p>'
         return div;
     };
     InfoBox.addTo(mymap);
@@ -41,7 +41,7 @@ navigator.geolocation.getCurrentPosition(function(location) {
       "opacity": 0.75
     };
 
-    var StationPolys = new L.geoJson(StationPolys, {
+    var StationPolygons = new L.geoJson(StationPolys, {
       onEachFeature: onEachStation,
       style: StationStyle
     }).addTo(mymap);
@@ -49,7 +49,7 @@ navigator.geolocation.getCurrentPosition(function(location) {
     // Leaflet search
     var markersLayer = new L.LayerGroup();	//layer contain searched elements
     mymap.addLayer(markersLayer);
-    var controlSearch = new L.Control.Search({layer: markersLayer, initial: false, position:'topleft', zoom: 20, collapsed: false});
+    var controlSearch = new L.Control.Search({layer: markersLayer, initial: false, position:'topleft', zoom: 19, collapsed: false});
     mymap.addControl( controlSearch );
 
     controlSearch.on('search:locationfound', function (event) {
