@@ -48,7 +48,15 @@ navigator.geolocation.getCurrentPosition(function(location) {
   // Leaflet search
   var markersLayer = new L.LayerGroup(); //layer contain searched elements
   mymap.addLayer(markersLayer);
-  var controlSearch = new L.Control.Search({layer: markersLayer, initial: false, position: 'topleft', zoom: 19, collapsed: false});
+  var controlSearch = new L.Control.Search({
+    layer: markersLayer, 
+    initial: false, 
+    position: 'topleft', 
+    zoom: 19, 
+    collapsed: false, 
+    hideMarkerOnCollapse: true, 
+    textPlaceholder: 'Bus Route...'
+  });
   mymap.addControl(controlSearch);
 
   controlSearch.on('search:locationfound', function(event) {
