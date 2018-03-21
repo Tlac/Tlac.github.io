@@ -97,7 +97,5 @@ navigator.geolocation.getCurrentPosition(function(location) {
     });
 
     // Adding user icon based on geolocation
-    var userLocationLatLng = new L.LatLng(location.coords.latitude, location.coords.longitude);
-    var userMarker = new L.Marker(userLocationLatLng, {icon: userIcon} );
-    userMarker.addTo(mymap);
+    var userMarker = new L.Marker(userLatLng, {icon: userIcon}).addTo(mymap);
 });
