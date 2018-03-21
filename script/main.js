@@ -30,7 +30,7 @@ navigator.geolocation.getCurrentPosition(function(location) {
     // Bind popup to station polygon
     function onEachStation(feature, layer) {
         if (feature.properties) {
-            layer.bindPopup(feature.properties.stationName)
+            layer.bindPopup(feature.properties.stationName + "<br>Station Webpage: <a href=" + feature.properties.url + " target='_blank'>Click here</a>")
         }
     };
 
