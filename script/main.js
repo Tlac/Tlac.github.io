@@ -49,7 +49,7 @@ navigator.geolocation.getCurrentPosition(function(location) {
     // Leaflet search
     var markersLayer = new L.LayerGroup();	//layer contain searched elements
     mymap.addLayer(markersLayer);
-    var controlSearch = new L.Control.Search({layer: markersLayer, initial: false, position:'topleft', zoom: 20});
+    var controlSearch = new L.Control.Search({layer: markersLayer, initial: false, position:'topleft', zoom: 20, collapsed: false});
     mymap.addControl( controlSearch );
 
     controlSearch.on('search:locationfound', function (event) {
