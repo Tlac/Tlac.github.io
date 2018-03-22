@@ -85,7 +85,7 @@ navigator.geolocation.getCurrentPosition(function(location) {
   });
 
   var userIcon = new L.Icon({
-    iconUrl: './images/userIcon.svg',
+    iconUrl: './images/userIcon-blue.svg',
     shadowUrl: './images/userIcon.svg',
     iconSize: [
       26, 26
