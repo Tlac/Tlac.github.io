@@ -1,55 +1,16 @@
-<!DOCTYPE html>
 <html>
 <head>
-	<title>GO Bus Platform Routing</title>
-
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-	<!-- Jquery -->
-	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-  	<script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
-	<link href="http://code.jquery.com/ui/1.10.2/themes/smoothness/jquery-ui.css" rel="Stylesheet"></link>
-
-	<!-- Bootstrap -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
-	<!-- Leaflet -->
-	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.2/dist/leaflet.css" />
-	<script src="https://unpkg.com/leaflet@1.0.2/dist/leaflet-src.js"></script>
-
-	<!-- Leaflet-search -->
-	<link rel="stylesheet" href="./dependencies/leaflet-search.css" />
-	<script src="./dependencies/leaflet-search.js"></script>
-
-	<!-- Datasets -->
-	<script src="./data/StationPolys.geojson" type="text/javascript"></script>
-	<script src="./data/PlatformPoints.geojson" type="text/javascript"></script>
-
-	<!-- Stylesheet -->
-	<link rel="stylesheet" type="text/css" href="./style/style.css">
-
-	<!-- Geolocator -->
-	<script src="https://d3js.org/d3.v3.min.js"></script>
-	<script src="https://d3js.org/topojson.v0.min.js"></script>
-	
+    <title>Navigator</title>
 </head>
 <body>
-	<!-- Header Icon -->
-	<div class="main-header">
-		<a href="index.html">
-			<img src="./images/logo.png" alt="logo not found" height="95" width="181">
-		</a>
-	</div>
-
-	<!-- Main Map -->
-	<div class="main-map" id="mapid"></div>
-
-	<!-- Main Javascript -->
-	<script src="./script/main.js" type="text/javascript"></script>
-
+    <h1 style="margin-top:50px;text-align:center;font-family:Helvetica Neue, Helvetica, Arial, sans-serif;">Geog 483 Final Project</h1>
+    <div style="margin-top:150px;display:flex; flex-direction:row;text-align:center;justify-content:space-evenly;">
+        <a href="./leaflet/index.html" style="background:#1EB300;height:300px;width:300px;display:flex; flex-direction:column;color:black;text-decoration: none;font-family:Helvetica Neue, Helvetica, Arial, sans-serif;font-weight: 500;line-height: 1.2;font-size: 2rem;">
+            <div style="margin-top:auto;margin-bottom:auto;">Leaflet</div>
+        </a>
+        <a href="./mapbox/index.html" style="background:#4264fb;height:300px;width:300px;display:flex; flex-direction:column;color:black;text-decoration: none;font-family:Helvetica Neue, Helvetica, Arial, sans-serif;font-weight: 500;line-height: 1.2;font-size: 2rem;">
+            <div style="margin-top:auto;margin-bottom:auto;">Mapbox</div>
+        </a>
+    </div>
 </body>
 </html>
