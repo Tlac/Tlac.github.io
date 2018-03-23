@@ -12,34 +12,34 @@ navigator.geolocation.getCurrentPosition(function(location) {
 	map.on('load', function () {
 
 		map.addLayer({
-		   'id': 'maine',
-		   'type': 'fill',
-		   'source': {
-			   'type': 'geojson',
-			   'data': stationPolygons
-		   },
-		   'layout': {},
-		   'paint': {
-			   'fill-color': '#088',
-			   'fill-opacity': 0.4
-		   }
-	   });
-	   map.addLayer({
-		   "id": "busstops",
-		   "type": "symbol",
-		   "source": {
-			   "type": "geojson",
-			   "data": platformPoints
-		   },
-		   "layout": {
-			   "icon-image": "bus-15",
-			   //"text-field": "{area}",
-			   "text-font": ["Open Sans Semibold", "Arial Unicode MS Bold"],
-			   "text-offset": [0, 0.6],
-			   "text-anchor": "top"
-		   }
-	   });
-	   map.on('click', 'busstops', function (e) {
+			'id': 'busArea',
+			'type': 'fill',
+			'source': {
+				'type': 'geojson',
+				'data': stationPolygons
+			},
+			'layout': {},
+			'paint': {
+				'fill-color': '#088',
+				'fill-opacity': 0.4
+			}
+		});
+
+		map.addLayer({
+			"id": "busStop",
+			"type": "symbol",
+			"source": {
+				"type": "geojson",
+				"data": platformPoints
+			},
+			"layout": {
+				"icon-image": "bus-15",
+				"text-font": ["Open Sans Semibold", "Arial Unicode MS Bold"],
+				"text-offset": [0, 0.6],
+				"text-anchor": "top"
+			}
+		});
+		map.on('click', 'busStop', function (e) {
 			var coordinates = e.features[0].geometry.coordinates.slice();
 			var description = '';
 			var busNumbers = e.features[0].properties.buses.split(',')
@@ -59,6 +59,12 @@ navigator.geolocation.getCurrentPosition(function(location) {
 			new mapboxgl.Popup()
 				.setLngLat(coordinates)
 				.setHTML(description)
+				.addTo(map);
+		});
+		map.on('click', 'busArea', function (e) {
+			new mapboxgl.Popup()
+				.setLngLat(e.lngLat)
+				.setHTML(e.features[0].properties.stationName)
 				.addTo(map);
 		});
 	});
