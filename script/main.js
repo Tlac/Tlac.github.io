@@ -5,7 +5,7 @@ navigator.geolocation.getCurrentPosition(function(location) {
     var userLatLng = new L.LatLng(location.coords.latitude, location.coords.longitude);
 
     // Set map based on the center being the user location
-    var mymap = L.map('mapid', {zoomControl: false}).setView(userLatLng, 18); // old: [43.595213, -79.648730]
+    var mymap = L.map('mapid', {zoomControl: false}).setView(userLatLng, 16); // old: [43.595213, -79.648730]
 
     // Set up tile layer
     L.tileLayer('https://stamen-tiles-{s}.a.ssl.fastly.net/toner/{z}/{x}/{y}.{ext}', {
