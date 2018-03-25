@@ -1,5 +1,6 @@
 // This gets the user location
 navigator.geolocation.getCurrentPosition(function(location) {
+    console.log("im in the function")
     // Save user location
     var userLatLng = new L.LatLng(location.coords.latitude, location.coords.longitude);
 
@@ -30,7 +31,7 @@ navigator.geolocation.getCurrentPosition(function(location) {
     }
 
     // Set up info box
-    var InfoBox = L.control({position: 'topright'});
+    var InfoBox = L.control({position: 'bottomright'});
 
     InfoBox.onAdd = function(map) {
         var div = L.DomUtil.create('div', 'info legend');
@@ -75,13 +76,11 @@ navigator.geolocation.getCurrentPosition(function(location) {
     controlSearch.on('search:locationfound', function(event) {
         event.layer.openPopup();
         var searchLoc = new L.LatLng( event.layer._latlng.lat, event.layer._latlng.lng);
-        //console.log(searchLoc);
         var userLat = String(userLatLng.lat);
         var userLng = String(userLatLng.lng);
         var destinationLat = String(searchLoc.lat);
         var destinationLng = String(searchLoc.lng);
         var url = 'https://api.mapbox.com/directions/v5/mapbox/walking/' + userLng + ',' + userLat + ';' + destinationLng + ',' + destinationLat + '?geometries=geojson&access_token=pk.eyJ1IjoidGxhYyIsImEiOiJjamYwY3N6MnYwbG4yMzNvaDlsdzY0NW03In0.cthaFUf4255KncCJn1FmRw';
-        //console.log(url);
         var route;
         axios.get(url).then(function (response) {
         var routedata = [response.data.routes[0].geometry.coordinates];
