@@ -1,7 +1,9 @@
 // This gets the user location
-navigator.geolocation.getCurrentPosition(function(location) {
+//navigator.geolocation.getCurrentPosition(function(location) {
   // Save user location
-  var userLatLng = new L.LatLng(location.coords.latitude, location.coords.longitude);
+  //var userLatLng = new L.LatLng(location.coords.latitude, location.coords.longitude);
+  var userLatLng = new L.LatLng(
+43.4653171, -80.5327216);
   console.log(userLatLng);
 
   // Set map based on the center being the user location
@@ -15,6 +17,21 @@ navigator.geolocation.getCurrentPosition(function(location) {
     maxZoom: 20,
     ext: 'png'
   }).addTo(mymap);
+
+  // Function to remove polylines
+  function clearCustomPolyline() {
+      for(i in mymap._layers) {
+          console.log(mymap._layers[i])
+          if(mymap._layers[i].options.userRoute != undefined) {
+              try {
+                  mymap.removeLayer(mymap._layers[i]);
+              }
+              catch(e) {
+                  console.log("problem with " + e + mymap._layers[i]);
+              }
+          }
+      }
+  }
 
   // Set up info box
   var InfoBox = L.control({position: 'topright'});
@@ -49,12 +66,12 @@ navigator.geolocation.getCurrentPosition(function(location) {
   var markersLayer = new L.LayerGroup(); //layer contain searched elements
   mymap.addLayer(markersLayer);
   var controlSearch = new L.Control.Search({
-    layer: markersLayer, 
-    initial: false, 
-    position: 'topleft', 
-    zoom: 19, 
-    collapsed: false, 
-    hideMarkerOnCollapse: true, 
+    layer: markersLayer,
+    initial: false,
+    position: 'topleft',
+    zoom: 19,
+    collapsed: false,
+    hideMarkerOnCollapse: true,
     textPlaceholder: 'Bus Route...'
   });
   mymap.addControl(controlSearch);
@@ -62,7 +79,24 @@ navigator.geolocation.getCurrentPosition(function(location) {
   controlSearch.on('search:locationfound', function(event) {
     event.layer.openPopup();
     var searchLoc = new L.LatLng( event.layer._latlng.lat, event.layer._latlng.lng);
-    console.log(searchLoc);
+    //console.log(searchLoc);
+    var userLat = String(userLatLng.lat);
+    var userLng = String(userLatLng.lng);
+    var destinationLat = String(searchLoc.lat);
+    var destinationLng = String(searchLoc.lng);
+    var url = 'https://api.mapbox.com/directions/v5/mapbox/walking/' + userLng + ',' + userLat + ';' + destinationLng + ',' + destinationLat + '?geometries=geojson&access_token=pk.eyJ1IjoidGxhYyIsImEiOiJjamYwY3N6MnYwbG4yMzNvaDlsdzY0NW03In0.cthaFUf4255KncCJn1FmRw';
+    //console.log(url);
+    var route;
+    axios.get(url)
+        .then(function (response) {
+            var routedata = [response.data.routes[0].geometry.coordinates];
+            routedata[0].map(function(data){
+            	return data.reverse();
+            });
+            clearCustomPolyline()
+            route = L.polyline(routedata, {color: 'red', userRoute: 'userToBus'}).addTo(mymap);
+            mymap.fitBounds(route.getBounds());
+        });
   });
 
   // Custom markers
@@ -126,4 +160,4 @@ navigator.geolocation.getCurrentPosition(function(location) {
 
   // Adding user icon based on geolocation
   var userMarker = new L.Marker(userLatLng, {icon: userIcon}).addTo(mymap);
-});
+//});
