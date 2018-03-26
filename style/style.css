@@ -37,7 +37,7 @@ html, body {
     margin-left: auto;
     margin-right: auto;
     position: relative;
-    height: 30px;
+    height: 31px;
     border-radius: 3px;
     box-shadow: 0 1px 7px #999;
 }
@@ -68,7 +68,7 @@ html, body {
 /* Fix cancel search button location */
 .leaflet-control-container .leaflet-top .leaflet-control-search .search-cancel {
     right: 0;
-    margin-top: 5px;
+    margin-top: 6px;
 }
 
 /* Removed search button */

@@ -100,9 +100,9 @@ navigator.geolocation.getCurrentPosition(function(location) {
         shadowUrl: './images/marker-shadow.png',
         iconSize: [16, 16], // size of the icon
         shadowSize: [0, 0], // size of the shadow
-        iconAnchor: [0, 8], // point of the icon which will correspond to marker's location
+        iconAnchor: [8, 8], // point of the icon which will correspond to marker's location
         shadowAnchor: [0, 0], // the same for the shadow
-        popupAnchor: [8, -5] // point from which the popup should open relative to the iconAnchor
+        popupAnchor: [0, -5] // point from which the popup should open relative to the iconAnchor
     });
 
     var userIcon = new L.Icon({
