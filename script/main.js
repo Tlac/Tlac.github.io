@@ -36,7 +36,7 @@ navigator.geolocation.getCurrentPosition(function(location) {
 
     InfoBox.onAdd = function(map) {
         var div = L.DomUtil.create('div', 'info legend');
-        div.innerHTML = '<p class="Info"><big>Where to GO Bus Platform Routing App</big><br>• Search for your bus in the top left search bar<br>• Scroll to ZOOM</p>';
+        div.innerHTML = '<p class="Info"><big>Where to GO Bus Platform Routing App</big><br>• Search for your bus in the top search bar<br>• Scroll to ZOOM</p>';
         return div;
     };
     InfoBox.addTo(mymap);
