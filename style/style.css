@@ -16,7 +16,7 @@ html, body {
 
 #mapid {
   width: 100%;
-  height: 100%;
+  height: 85%;
 }
 
 .main-header {
@@ -26,7 +26,7 @@ html, body {
   margin-bottom: 20px;
 }
 
-.main-map .leaflet-control-container .leaflet-right {
+.main-map .leaflet-control-container .leaflet-right.leaflet-top {
     display: none;
 }
 
@@ -80,5 +80,8 @@ html, body {
 @media screen and (max-width: 800px) {
   .main-header {
       display: none;
+  }
+  #mapid {
+    height: 100%;
   }
 }

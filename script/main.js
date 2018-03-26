@@ -5,11 +5,11 @@ navigator.geolocation.getCurrentPosition(function(location) {
     var userLatLng = new L.LatLng(location.coords.latitude, location.coords.longitude);
 
     // Set map based on the center being the user location
-    var mymap = L.map('mapid', {zoomControl: false}).setView(userLatLng, 16); // old: [43.595213, -79.648730]
+    var mymap = L.map('mapid', {zoomControl: false}).setView(userLatLng, 17); // old: [43.595213, -79.648730]
 
     // Set up tile layer
     L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
-        attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a> &mdash; Map data &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+        attribution: '',
         subdomains: 'abcd',
         id: 'mapbox.streets',
         minZoom: 0,
@@ -36,7 +36,7 @@ navigator.geolocation.getCurrentPosition(function(location) {
 
     InfoBox.onAdd = function(map) {
         var div = L.DomUtil.create('div', 'info legend');
-        div.innerHTML = '<p class="Info"><big>Where to GO Bus Platform Routing App</big><br>- Search for your bus in the top left search bar<br>- Scroll to ZOOM</p>';
+        div.innerHTML = '<p class="Info"><big>Where to GO Bus Platform Routing App</big><br>• Search for your bus in the top left search bar<br>• Scroll to ZOOM</p>';
         return div;
     };
     InfoBox.addTo(mymap);
