@@ -8,9 +8,10 @@ navigator.geolocation.getCurrentPosition(function(location) {
     var mymap = L.map('mapid', {zoomControl: false}).setView(userLatLng, 16); // old: [43.595213, -79.648730]
 
     // Set up tile layer
-    L.tileLayer('https://stamen-tiles-{s}.a.ssl.fastly.net/toner/{z}/{x}/{y}.{ext}', {
+    L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
         attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a> &mdash; Map data &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
         subdomains: 'abcd',
+        id: 'mapbox.streets',
         minZoom: 0,
         maxZoom: 20,
         ext: 'png'

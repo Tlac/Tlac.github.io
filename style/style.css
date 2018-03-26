@@ -1,4 +1,3 @@
-
 html, body {
   height: 100%;
   width: 100%;
@@ -27,6 +26,57 @@ html, body {
   margin-bottom: 20px;
 }
 
+.main-map .leaflet-control-container .leaflet-right {
+    display: none;
+}
+
+.leaflet-control-container .leaflet-top {
+    width: 100%;
+    max-width: 600px;
+    background: white;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    height: 30px;
+    border-radius: 3px;
+    box-shadow: 0 1px 7px #999;
+}
+
+/* Center search bar (container for input)*/
+.leaflet-control-container .leaflet-top .leaflet-control-search {
+    margin-left: 3px;
+    margin-right: 3px;
+    width: auto;
+    float: none;
+    border: 1px black;
+    box-sizing: border-box;
+}
+
+.leaflet-control-container .leaflet-top .leaflet-control-search .search-input {
+    background: white;
+    width: 100%;
+    height: 25px;
+    margin-left: 0; /*offset default value*/
+}
+
+/* Fix width style for search results*/
+.leaflet-control-container .leaflet-top .leaflet-control-search .search-tooltip {
+    position: relative;
+    width: 100%;
+}
+
+/* Fix cancel search button location */
+.leaflet-control-container .leaflet-top .leaflet-control-search .search-cancel {
+    right: 0;
+    margin-top: 5px;
+}
+
+/* Removed search button */
+.leaflet-control-container .leaflet-top .leaflet-control-search .search-button{
+    display: none;
+}
+
+/* Remove logo on mobile (responsive design)*/
 @media screen and (max-width: 800px) {
   .main-header {
       display: none;
