@@ -16,7 +16,7 @@ html, body {
 
 #mapid {
   width: 100%;
-  height: 85%;
+  height: 100%;
 }
 
 .main-header {
@@ -76,12 +76,8 @@ html, body {
     display: none;
 }
 
-/* Remove logo on mobile (responsive design)*/
-@media screen and (max-width: 800px) {
-  .main-header {
-      display: none;
-  }
-  #mapid {
-    height: 100%;
-  }
+.Info {
+    border: 1px green;
+    background: white;
+    text-align: center;
 }

@@ -1,6 +1,5 @@
 // This gets the user location
 navigator.geolocation.getCurrentPosition(function(location) {
-    console.log("im in the function")
     // Save user location
     var userLatLng = new L.LatLng(location.coords.latitude, location.coords.longitude);
 
@@ -36,7 +35,7 @@ navigator.geolocation.getCurrentPosition(function(location) {
 
     InfoBox.onAdd = function(map) {
         var div = L.DomUtil.create('div', 'info legend');
-        div.innerHTML = '<p class="Info"><big>Where to GO Bus Platform Routing App</big><br>• Search for your bus in the top search bar<br>• Scroll/Pinch to Zoom</p>';
+        div.innerHTML = '<p class="Info"><img class="logo" src="./images/logo.png" alt="logo not found" height="95" width="181"><br>Search for your bus in the top search bar.<br>Scroll/Pinch to Zoom.</p>';
         return div;
     };
     InfoBox.addTo(mymap);
