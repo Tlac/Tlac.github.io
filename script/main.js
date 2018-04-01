@@ -124,6 +124,7 @@ navigator.geolocation.getCurrentPosition(function(location) {
             title += '<br> Buses: ' + pointArray[i].properties.buses[differentBuses] + ' ' + pointArray[i].properties.busName[differentBuses]; //value searched
             searchTerm += pointArray[i].properties.buses[differentBuses] + ' ' + pointArray[i].properties.busName[differentBuses] + ' ';
         }
+        searchTerm += ' ' + pointArray[i].properties.direction;
         marker = new L.Marker(new L.latLng(loc), {
             title: searchTerm,
             icon: busIcon
