@@ -38,6 +38,40 @@ var StationPolys = {
       {
          "type":"Feature",
          "properties":{
+            "stationName":"University of Waterloo— BUS STOP",
+            "url":"http://www.gotransit.com/publicroot/en/travelling/stations.aspx?station=WUNI"
+         },
+         "geometry":{
+            "type":"Polygon",
+            "coordinates":[
+               [
+                  [
+                     -80.54190069437027,
+                     43.47320839614005
+                  ],
+                  [
+                     -80.54178535938263,
+                     43.47304099959119
+                  ],
+                  [
+                     -80.54158955812454,
+                     43.47311301909347
+                  ],
+                  [
+                     -80.54173439741135,
+                     43.473262897241945
+                  ],
+                  [
+                     -80.54190069437027,
+                     43.47320839614005
+                  ]
+               ]
+            ]
+         }
+      },
+      {
+         "type":"Feature",
+         "properties":{
             "stationName":"York University Bus Loop— BUS STOP",
             "url":"http://www.gotransit.com/publicroot/en/travelling/stations.aspx?station=YRKU"
          },
