@@ -7,6 +7,12 @@
     top: 0
 }
 
+@media (max-width:1050px) {
+    .nav-bar-container {
+        display: none;
+    }
+}
+
 .nav-bar.scrolled {
     background-color: #ff70c2 !important;
     transition: background-color 200ms linear;
@@ -24,10 +30,6 @@
     content: "";
     display: table;
     clear: both;
-}
-
-.nav-bar .w3-button { /* maybe get rid of */
-    white-space: normal
 }
 
 .nav-button {
@@ -72,8 +74,81 @@
 
 /* mobile nav bar */
 
-.mobile-nav-bar {
-    display: none !important
+.mobile-nav-bar-container {
+    overflow: hidden;
+    background-color: #FFFFFF;
+    position: relative;
+    height: 72px;
+}
+
+.mobile-nav-bar-container a {
+    padding: 17px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+}
+
+@media (min-width:1051px) {
+    .mobile-nav-bar-container {
+        display: none;
+    }
+}
+
+/* Mobile nav extended */
+
+.mobile-extended-nav {
+    height: 100%;
+    width: 100%;
+    display: none;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #FFFFFF;
+    display:flex;
+}
+
+.mobile-extended-nav-content {
+    position: relative;
+    top: 3%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.mobile-extended-nav a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #000000;
+    display: block;
+    transition: 0.3s;
+}
+
+.mobile-extended-nav a:hover, .mobile-extended-nav a:focus { /* change this for hover color change */
+    color: #000000;
+}
+
+.mobile-extended-nav .closebtn {
+    position: absolute;
+    top: -16px;
+    left: 7px;
+    font-size: 60px;
+}
+
+.mobile-nav-menu-divider {
+    width: 87%;
+    border-color: #E4E4E4;
+}
+
+.mobile-nav-extended-footer-content-container {
+    display:flex; 
+    justify-content: center;
+}
+
+.mobile-nav-extended-footer-content {
+    color: #5979B0;
+    /*font-family: 'Days One'; need to get this font */
 }
 
 /* background image section */
@@ -107,7 +182,7 @@
 }
 
 .team-portrait {
-    border-radius: 4px;
+    border-radius: 100px;
     margin-bottom: 16px !important;
     width:60%;
 }
@@ -142,6 +217,7 @@
     width: 100%;
     text-align: center;
 }
+
 @media (min-width:601px) {
     .third-col {
         width: 33.33333%
@@ -260,68 +336,4 @@ img {
 
 a {
     color: inherit
-}
-
-/* keep for mobile for now? / clean up later */
-.w3-button {
-    border: none;
-    display: inline-block;
-    padding: 8px 16px;
-    vertical-align: middle;
-    overflow: hidden;
-    text-decoration: none;
-    color: inherit;
-    background-color: inherit;
-    text-align: center;
-    cursor: pointer;
-    white-space: nowrap
-}
-
-.w3-button {
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none
-}
-
-.w3-bar-block .w3-bar-item {
-    width: 100%;
-    display: block;
-    padding: 8px 16px;
-    text-align: left;
-    border: none;
-    white-space: normal;
-    float: none;
-    outline: 0;
-    color: #fff !important;
-}
-
-.w3-show {
-    display: block !important
-}
-
-@media (max-width:1205px) {
-    .w3-auto {
-        max-width: 95%
-    }
-}
-
-@media (max-width:600px) {
-    .hide-small {
-        display: none !important
-    }
-}
-
-@media (min-width:993px) {
-    .hide-large {
-        display: none !important
-    }
-}
-
-@media (max-width:992px) and (min-width:601px) {
-    .w3-hide-medium {
-        display: none !important
-    }
 }

@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./style/style.css">
     <link rel="stylesheet" href="./assets/fonts/fonts">
     <link rel="stylesheet" href="./assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
       body {font-family: "Lato", sans-serif}
     </style>
@@ -31,20 +32,43 @@
           <a href="https://discord.com" class="nav-item"><img src="./assets/icons/discord.png"></a>
           <a href="https://instagram.com" class="nav-item"><img src="./assets/icons/instagram.png"></a>
         </div>
-      
-        <!-- see how the links disappears in small screens and replicate it for the buttons and icons (use hide-small)
-        <a href="#synopsis" class="w3-bar-item w3-button w3-padding-large hide-small">Synopsis</a>
-        <a href="#team" class="w3-bar-item w3-button w3-padding-large hide-small">Team</a>
-        <a href="#faq" class="w3-bar-item w3-button w3-padding-large hide-small">FAQ</a>
-        -->
+
       </div>
     </div>
 
-    <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
-    <div id="navBar" class="mobile-nav-bar w3-bar-block w3-black hide-large w3-hide-medium w3-top" style="margin-top:46px">
-      <a href="#synopsis" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Synopsis</a>
-      <a href="#team" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Team</a>
-      <a href="#faq" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">FAQ</a>
+    <div class="mobile-nav-bar-container">
+      <a href="javascript:void(0);" onclick="openNav()">
+        <i class="fa fa-bars" style="font-size:36px"></i>
+      </a>
+    </div>
+
+    <div id="mobileExtendedNav" class="mobile-extended-nav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <div class="mobile-extended-nav-content">
+        <a href="#story" onclick="closeNav()">Origin</a>
+        <hr class="mobile-nav-menu-divider">
+        <a href="#overview" onclick="closeNav()">Season 1:ShipRekt</a>
+        <hr class="mobile-nav-menu-divider">
+        <a href="#team" onclick="closeNav()">Mission & Team</a>
+        <hr class="mobile-nav-menu-divider">
+        <a href="#faq" onclick="closeNav()">FAQ</a>
+        <hr class="mobile-nav-menu-divider">
+        <div style="display:flex; justify-content: center;">
+          <a href="https://twitter.com" class="nav-item"><img src="./assets/icons/twitter.png"></a>
+          <a href="https://instagram.com" class="nav-item"><img src="./assets/icons/instagram.png"></a>
+          <a href="https://discord.com" class="nav-item"><img src="./assets/icons/discord.png"></a>
+        </div>
+        <div class="mobile-nav-extended-footer-content-container">
+          <p class="mobile-nav-extended-footer-content">Bayside Inc. 2022</p>
+        </div>
+        <div class="mobile-nav-extended-footer-content-container">
+          <p class="mobile-nav-extended-footer-content">Made in New York, New York</p>
+        </div>
+        <div class="mobile-nav-extended-footer-content-container">
+          <p class="mobile-nav-extended-footer-content">hello@baysidexyz.com</p>
+        </div>
+      </div>
+      
     </div>
 
     <!-- Main Content -->
