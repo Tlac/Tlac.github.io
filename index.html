@@ -15,10 +15,10 @@
   </head>
   <body>
     <!-- Navbar -->
-    <div class="w3-top">
-      <div class="w3-bar w3-black" style="display: flex; justify-content: space-between">
-        <a href="#" class="main-logo w3-padding-large">
-          <img src="./assets/images/Logo.png" style="max-width:300px">
+    <div class="nav-bar-container">
+      <div class="nav-bar">
+        <a href="#" class="logo-container">
+          <img class="nav-logo" src="./assets/images/Logo.png">
         </a>
         <div style="display:flex; align-items: center; justify-content: space-evenly;">
           <a href="#story"><button class="nav-button nav-item">Story</button></a>
@@ -32,66 +32,66 @@
           <a href="https://instagram.com" class="nav-item"><img src="./assets/icons/instagram.png"></a>
         </div>
       
-        <!-- see how the links disappears in small screens and replicate it for the buttons and icons (use w3-hide-small)
-        <a href="#synopsis" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Synopsis</a>
-        <a href="#team" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Team</a>
-        <a href="#faq" class="w3-bar-item w3-button w3-padding-large w3-hide-small">FAQ</a>
+        <!-- see how the links disappears in small screens and replicate it for the buttons and icons (use hide-small)
+        <a href="#synopsis" class="w3-bar-item w3-button w3-padding-large hide-small">Synopsis</a>
+        <a href="#team" class="w3-bar-item w3-button w3-padding-large hide-small">Team</a>
+        <a href="#faq" class="w3-bar-item w3-button w3-padding-large hide-small">FAQ</a>
         -->
-    </div>
+      </div>
     </div>
 
     <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
-    <div id="navBar" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+    <div id="navBar" class="mobile-nav-bar w3-bar-block w3-black hide-large w3-hide-medium w3-top" style="margin-top:46px">
       <a href="#synopsis" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Synopsis</a>
       <a href="#team" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Team</a>
       <a href="#faq" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">FAQ</a>
     </div>
 
     <!-- Main Content -->
-    <div class="w3-content" style="max-width:2000px;"> <!-- got rid of margin-top:46px for background behind navbar-->
+    <div class="main-content-container"> <!-- got rid of margin-top:46px for background behind navbar-->
       <!-- Main Background -->
       <div class="main-background">
-        <img src="./assets/images/main_background.jpg" style="width:100%">
+        <img class="background-image" src="./assets/images/main_background.jpg">
       </div>
 
       <!-- STORY -->
-      <div class="section-container w3-container w3-content w3-center" style="max-width:1000px" id="story">
+      <div class="section-container" id="story">
         <h2 class="section-header">Origin</h2>
-        <p class="w3-opacity"><i>A group of travellers took off on a spaceship set for a new home.</i></p>
-        <p class="w3-justify">During the trip, a mysterious issue caused the ship to make a crash landing on the seaside cliffs of a tropical world.</p>
-        <p class="w3-justify">When they got out, they were please with their surroundings and met a new friend. He fixes them with a drink and feeling inspired they built a bar out of the broken spaceship.</p>
+        <p class="sub-heading"><i>A group of travellers took off on a spaceship set for a new home.</i></p>
+        <p class="section-text">During the trip, a mysterious issue caused the ship to make a crash landing on the seaside cliffs of a tropical world.</p>
+        <p class="section-text">When they got out, they were please with their surroundings and met a new friend. He fixes them with a drink and feeling inspired they built a bar out of the broken spaceship.</p>
       </div>
 
       <!-- OVERVIEW -->
-      <div class="section-container w3-container w3-content w3-center" style="max-width:1000px" id="overview">
+      <div class="section-container" id="overview">
         <h2 class="section-header">Overview</h2>
-        <p class="w3-opacity"><i>An accidental oasis. The premier metaverse destination.</i></p>
-        <p class="w3-justify">Minting a Bayside NFT will give you access to the broken space-ship bar - affectionately called the whale bar. That's your entry point into the world of Bayside.</p>
-        <p class="w3-justify">Your Bayside NFT will unlock ownership to the town of Bayside as the story unfolds and discoveries are made together.</p>
+        <p class="sub-heading"><i>An accidental oasis. The premier metaverse destination.</i></p>
+        <p class="section-text">Minting a Bayside NFT will give you access to the broken space-ship bar - affectionately called the whale bar. That's your entry point into the world of Bayside.</p>
+        <p class="section-text">Your Bayside NFT will unlock ownership to the town of Bayside as the story unfolds and discoveries are made together.</p>
       </div>
 
       <!-- TEAM -->
-      <div class="section-container w3-container w3-content w3-center" style="max-width:1000px" id="team">
+      <div class="section-container" id="team">
         <h2 class="section-header">Residents of Bayside</h2>
         <div class="team-row">
-          <div class="w3-third">
-            <h3>Brenden Lee</h3>
+          <div class="third-col">
+            <h3 class="team-member-name">Brenden Lee</h3>
             <img src="./assets/team/brenden_lee.png" class="team-portrait">
             <div>
               <b>Founder/CEO</b>
               <p>Product, building the brand/story and team at Bayside. 5+ years entrepreneurship, fundraising and product dev.</p>
             </div>
           </div>
-          <div class="w3-third">
-            <h3>Matt Goldman</h3>
+          <div class="third-col">
+            <h3 class="team-member-name">Matt Goldman</h3>
             <img src="./assets/team/matt_goldman.png" class="team-portrait">
             <div>
               <b>Co-Founder</b>
               <p>Growth, community and operations. 10 years tradfi plus 5 years developing content (Tik Tok, IG) and growing IRL communities</p>
             </div>
           </div>
-          <div class="w3-third">
-            <h3>Caio Oyafuso</h3>
+          <div class="third-col">
+            <h3 class="team-member-name">Caio Oyafuso</h3>
             <img src="./assets/team/caio_oyafuso.png" class="team-portrait">
             <div>
               <b>Creative Director</b>
@@ -101,24 +101,24 @@
           
         </div>
         <div class="team-row">
-          <div class="w3-third">
-            <h3>Shingo</h3>
+          <div class="third-col">
+            <h3 class="team-member-name">Shingo</h3>
             <img src="./assets/team/shingo.png" class="team-portrait">
             <div>
               <b>Artist / Illustrator</b>
               <p>Building visual worlds and illustrations for Bayside. Designer for EA Sports.</p>
             </div>
           </div>
-          <div class="w3-third">
-            <h3>Enrique Soto</h3>
+          <div class="third-col">
+            <h3 class="team-member-name">Enrique Soto</h3>
             <img src="./assets/team/enrique_soto.png" class="team-portrait">
             <div>
               <b>Creative Producer</b>
               <p>Executing on creative content and product vision for online and IRL events. Previously launched a fashion brand with a passion for design</p>
             </div>
           </div>
-          <div class="w3-third">
-            <h3>Ian (Jolin Ras)</h3>
+          <div class="third-col">
+            <h3 class="team-member-name">Ian (Jolin Ras)</h3>
             <img src="./assets/team/ian_jolin_ras.png" class="team-portrait">
             <div>
               <b>Audio Engineer</b>
@@ -129,33 +129,33 @@
       </div>
 
       <!-- FAQ -->
-      <div class="section-container w3-container w3-content w3-center" style="max-width:1000px" id="faq">
+      <div class="section-container" id="faq">
         <h2 class="section-header">FAQ</h2>
-        <p class="w3-opacity"><i>The questions that always gets asked!</i></p>
-        <h4 style="text-align: left";>When is Bayside Minting?</h4>
-        <p class="w3-justify">(TBD - official announcements done on Twitter)</p>
-        <h4 style="text-align: left";>What do I get with an NFT?</h4>
-        <p class="w3-justify">(Access to the bar + story + more to come)</p>
-        <h4 style="text-align: left";>How do I get early access / Whitelist?</h4>
-        <p class="w3-justify"> Participate in community events and engage with us on - it’s easy</p>
-        <h4 style="text-align: left";>When will Discord Launch?</h4>
-        <p class="w3-justify">(TBD)</p>
-        <h4 style="text-align: left";>How do I stay up to date?</h4>
-        <p class="w3-justify">(Follow our Twitter @Bayside_xyz)</p>
+        <p class="sub-heading"><i>The questions that always gets asked!</i></p>
+        <h4>When is Bayside Minting?</h4>
+        <p class="section-text">(TBD - official announcements done on Twitter)</p>
+        <h4>What do I get with an NFT?</h4>
+        <p class="section-text">(Access to the bar + story + more to come)</p>
+        <h4>How do I get early access / Whitelist?</h4>
+        <p class="section-text"> Participate in community events and engage with us on - it’s easy</p>
+        <h4>When will Discord Launch?</h4>
+        <p class="section-text">(TBD)</p>
+        <h4>How do I stay up to date?</h4>
+        <p class="section-text">(Follow our Twitter @Bayside_xyz)</p>
       </div>
     </div>
 
     <!-- Footer -->
-    <footer class="w3-container w3-center w3-opacity w3-xlarge">
+    <footer class="footer-container">
       <div>
         <a href="https://ca.boats.com/"><img src="./assets/icons/boat.png"></a>
         <a href="https://twitter.com"><img src="./assets/icons/twitter.png"></a>
         <a href="https://discord.com"><img src="./assets/icons/discord.png"></a>
         <a href="https://instagram.com"><img src="./assets/icons/instagram.png"></a>
       </div>
-      <p class="w3-medium">Bayside Inc. 2022</p>
-      <p class="w3-medium">Made in New York, New York</p>
-      <p class="w3-medium">hello@baysidexyz.com</p>
+      <p class="footer-info">Bayside Inc. 2022</p>
+      <p class="footer-info">Made in New York, New York</p>
+      <p class="footer-info">hello@baysidexyz.com</p>
     </footer>
   </body>
 </html>

@@ -10,7 +10,7 @@ function myFunction() {
   
 $(function () {
     $(document).scroll(function () {
-        var $nav = $(".w3-bar");
+        var $nav = $(".nav-bar");
         $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
     });
 });
