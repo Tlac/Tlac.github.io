@@ -172,12 +172,6 @@
 
 .section-header {
     letter-spacing: 1px;
-    text-align: center;
-}
-
-.sub-heading {
-    opacity: 0.60;
-    text-align: center;
 }
 
 .team-portrait {
@@ -187,8 +181,6 @@
 }
 
 .section-container {
-    padding-top: 64px !important;
-    padding-bottom: 64px !important;
     margin-left: auto;
     margin-right: auto;
     max-width: 980px;
@@ -231,10 +223,28 @@
     text-align: center;
 }
 
+.question-container {
+    display:flex;
+    justify-content:space-between;
+}
+
+#whatIsBaysideMiningAnswer, #earlyAccessAnswer, #discordAnswer, #upToDateAnswer{
+    display: none;
+}
+
+.question-plus {
+    align-items: center;
+    display:flex; 
+}
+
+.question-minus {
+    align-items: center;
+    display: none;
+}
+
 /* footer */
 
 .footer-container {
-    opacity: 0.60;
     text-align: center;
 }
 
@@ -246,6 +256,28 @@
     content: "";
     display: table;
     clear: both;
+}
+
+.origin-section {
+    background: linear-gradient(270deg, rgba(158, 175, 203, 0.5) 0%, rgba(189, 197, 210, 0.364948) 52.6%, rgba(189, 197, 210, 0.360938) 60.42%, rgba(217, 217, 217, 0) 100%, #C8B9C6 100%);
+}
+
+.footer-icon-container {
+    background: linear-gradient(180deg, rgba(182, 150, 197, 0.4) 0%, rgba(162, 171, 199, 0.4) 100%);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 158px;
+}
+
+.footer-info-container {
+    background: #F1F1F1;
+    color: #666666;
+}
+
+.footer-info-content {
+    padding-top: 45px;
+    padding-bottom: 45px;
 }
 
 /* generics */
@@ -263,11 +295,7 @@ body {
 
 footer {
     display: block;
-    color: #000 !important;
-    background-color: #f1f1f1 !important;
     font-size: 24px;
-    padding-top: 64px !important;
-    padding-bottom: 64px !important;
 }
 
 a {
@@ -336,3 +364,12 @@ img {
 a {
     color: inherit
 }
+
+p.footer-info {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+
+/* sandbox */
+

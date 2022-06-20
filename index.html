@@ -19,7 +19,7 @@
     <div class="nav-bar-container">
       <div class="nav-bar">
         <a href="#" class="logo-container">
-          <img class="nav-logo" src="./assets/images/Logo.png">
+          <img class="nav-logo" src="./assets/images/logo.png">
         </a>
         <div style="display:flex; align-items: center; justify-content: space-evenly;">
           <a href="#story"><button class="nav-button nav-item">Story</button></a>
@@ -27,10 +27,9 @@
           <a href="#team"><button class="nav-button nav-item">Team</button></a>
           <a href="#faq"><button class="nav-button nav-item">FAQ</button></a>
         
-          <a href="https://ca.boats.com/" class="nav-item"><img src="./assets/icons/boat.png"></a>
-          <a href="https://twitter.com" class="nav-item"><img src="./assets/icons/twitter.png"></a>
-          <a href="https://discord.com" class="nav-item"><img src="./assets/icons/discord.png"></a>
-          <a href="https://instagram.com" class="nav-item"><img src="./assets/icons/instagram.png"></a>
+          <a href="https://twitter.com" class="nav-item"><img src="./assets/icons/twitter-black.png"></a>
+          <a href="https://instagram.com" class="nav-item"><img src="./assets/icons/instagram-black.png"></a>
+          <a href="https://discord.com" class="nav-item"><img src="./assets/icons/discord-black.png"></a>
         </div>
 
       </div>
@@ -53,10 +52,10 @@
         <hr class="mobile-nav-menu-divider">
         <a href="#faq" onclick="closeNav()">FAQ</a>
         <hr class="mobile-nav-menu-divider">
-        <div style="display:flex; justify-content: center;">
-          <a href="https://twitter.com" class="nav-item"><img src="./assets/icons/twitter.png"></a>
-          <a href="https://instagram.com" class="nav-item"><img src="./assets/icons/instagram.png"></a>
-          <a href="https://discord.com" class="nav-item"><img src="./assets/icons/discord.png"></a>
+        <div style="display:flex; justify-content: space-evenly;">
+          <a href="https://twitter.com" class="nav-item"><img src="./assets/icons/twitter-black.png"></a>
+          <a href="https://instagram.com" class="nav-item"><img src="./assets/icons/instagram-black.png"></a>
+          <a href="https://discord.com" class="nav-item"><img src="./assets/icons/discord-black.png"></a>
         </div>
         <div class="mobile-nav-extended-footer-content-container">
           <p class="mobile-nav-extended-footer-content">Bayside Inc. 2022</p>
@@ -75,23 +74,29 @@
     <div class="main-content-container"> <!-- got rid of margin-top:46px for background behind navbar-->
       <!-- Main Background -->
       <div class="main-background">
-        <img class="background-image" src="./assets/images/main_background.jpg">
+        <img class="background-image" src="./assets/images/bayside-beach.png">
       </div>
 
       <!-- STORY -->
-      <div class="section-container" id="story">
+      <div class="section-container origin-section" id="story" style="">
         <h2 class="section-header">Origin</h2>
-        <p class="sub-heading"><i>A group of travellers took off on a spaceship set for a new home.</i></p>
-        <p class="section-text">During the trip, a mysterious issue caused the ship to make a crash landing on the seaside cliffs of a tropical world.</p>
-        <p class="section-text">When they got out, they were please with their surroundings and met a new friend. He fixes them with a drink and feeling inspired they built a bar out of the broken spaceship.</p>
+        <p class="section-text">Bayside is an NFT project which follows the story of a group of travellers taking off on a spaceship set for a new home.</p>
+        <p class="section-text">During the trip, a mysterious issue caused the ship to make a crash landing on the seaside cliffs of an unknown world.</p>
+        <p class="section-text">When they got out, they were pleased with their surroundings and amet a new friend. He fixes them with a drink and feeling inspired they built a bar out of the broken spaceship.</p>
+        <img class="background-image" src="./assets/images/bayside_ship.png">
+        <p class="section-text">OWNING AN NFT WILL BE YOUR ACCESS INTO THE WORLD OF BAYSIDE - AS WE DELIVER OUR CONTENT NARRATIVES THROUGH SEASONS...</p>
       </div>
 
       <!-- OVERVIEW -->
       <div class="section-container" id="overview">
-        <h2 class="section-header">Overview</h2>
-        <p class="sub-heading"><i>An accidental oasis. The premier metaverse destination.</i></p>
-        <p class="section-text">Minting a Bayside NFT will give you access to the broken space-ship bar - affectionately called the whale bar. That's your entry point into the world of Bayside.</p>
-        <p class="section-text">Your Bayside NFT will unlock ownership to the town of Bayside as the story unfolds and discoveries are made together.</p>
+        <img class="background-image" src="./assets/images/bayside_bar.png">
+        <p class="section-text">INTRODUCING SEASON 1:</p>
+        <h2 class="section-header">ShipRekt.</h2>
+        <p class="section-text">The markets are down, the ship has crashed and all that’s left to do is to lounge by the bar and have a drink.</p>
+        <p class="section-text">Welcome to Bayside.</p>
+        <p class="section-text">We created Bayside to foster a sense of destination and connection.</p>
+        <p class="section-text">That mission empowers our brand and is the engine behind our content, story and product experience.</p>
+        <p class="section-text">As creatives and innovators, our goal is to build new ways to amplify the experience of owning an NFT - making it more immersive, engaging and connective.</p>
       </div>
 
       <!-- TEAM -->
@@ -155,31 +160,79 @@
       <!-- FAQ -->
       <div class="section-container" id="faq">
         <h2 class="section-header">FAQ</h2>
-        <p class="sub-heading"><i>The questions that always gets asked!</i></p>
-        <h4>When is Bayside Minting?</h4>
-        <p class="section-text">(TBD - official announcements done on Twitter)</p>
-        <h4>What do I get with an NFT?</h4>
-        <p class="section-text">(Access to the bar + story + more to come)</p>
-        <h4>How do I get early access / Whitelist?</h4>
-        <p class="section-text"> Participate in community events and engage with us on - it’s easy</p>
-        <h4>When will Discord Launch?</h4>
-        <p class="section-text">(TBD)</p>
-        <h4>How do I stay up to date?</h4>
-        <p class="section-text">(Follow our Twitter @Bayside_xyz)</p>
+        <div class="question-container">
+          <h4>When is Bayside Minting?</h4>
+          <div id="whatIsBaysideMiningPlus" class="question-plus" href="javascript:void(0);" onclick="openDropdown('whatIsBaysideMining')">
+            <i class="fa fa-plus" style="font-size:20px"></i>
+          </div>
+          <div id="whatIsBaysideMiningMinus" class="question-minus" href="javascript:void(0);" onclick="closeDropdown('whatIsBaysideMining')">
+            <i class="fa fa-minus" style="font-size:20px"></i>
+          </div>
+        </div>
+        
+        <div>
+          <p id="whatIsBaysideMiningAnswer" class="section-text">(TBD - official announcements done on Twitter)</p>
+        </div>
+
+        <div class="question-container">
+          <h4>How do I get early access?</h4>
+          <div id="earlyAccessPlus" class="question-plus" href="javascript:void(0);" onclick="openDropdown('earlyAccess')">
+            <i class="fa fa-plus" style="font-size:20px"></i>
+          </div>
+          <div id="earlyAccessMinus" class="question-minus" href="javascript:void(0);" onclick="closeDropdown('earlyAccess')">
+            <i class="fa fa-minus" style="font-size:20px"></i>
+          </div>
+        </div>
+
+        <div>
+          <p id="earlyAccessAnswer" class="section-text">It’s easy! Just participate in community events and our regular social media challenges. There’s no need to jump through hoops, just show up and have fun.</p>
+        </div>
+        
+        <div class="question-container">
+          <h4>When will Discord Launch?</h4>
+          <div id="discordPlus" class="question-plus" href="javascript:void(0);" onclick="openDropdown('discord')">
+            <i class="fa fa-plus" style="font-size:20px"></i>
+          </div>
+          <div id="discordMinus" class="question-minus" href="javascript:void(0);" onclick="closeDropdown('discord')">
+            <i class="fa fa-minus" style="font-size:20px"></i>
+          </div>
+        </div>
+
+        <div>
+          <p id="discordAnswer" class="section-text">TBD</p>
+        </div>
+
+        <div class="question-container">
+          <h4>How do I stay up to date?</h4>
+          <div id="upToDatePlus" class="question-plus" href="javascript:void(0);" onclick="openDropdown('upToDate')">
+            <i class="fa fa-plus" style="font-size:20px"></i>
+          </div>
+          <div id="upToDateMinus" class="question-minus" href="javascript:void(0);" onclick="closeDropdown('upToDate')">
+            <i class="fa fa-minus" style="font-size:20px"></i>
+          </div>
+        </div>
+
+        <div>
+          <p id="upToDateAnswer" class="section-text">Follow us on Twitter @Bayside_xyz</p>
+        </div>
+
+        <img class="background-image" src="./assets/images/bayside_surfboard.png">
       </div>
     </div>
 
     <!-- Footer -->
     <footer class="footer-container">
-      <div>
-        <a href="https://ca.boats.com/"><img src="./assets/icons/boat.png"></a>
-        <a href="https://twitter.com"><img src="./assets/icons/twitter.png"></a>
-        <a href="https://discord.com"><img src="./assets/icons/discord.png"></a>
-        <a href="https://instagram.com"><img src="./assets/icons/instagram.png"></a>
+      <div class="footer-icon-container">
+        <a href="https://twitter.com"><img src="./assets/icons/twitter-grey.png"></a>
+        <a href="https://instagram.com"><img src="./assets/icons/instagram-grey.png"></a>
+        <a href="https://discord.com"><img src="./assets/icons/discord-grey.png"></a>
       </div>
-      <p class="footer-info">Bayside Inc. 2022</p>
-      <p class="footer-info">Made in New York, New York</p>
-      <p class="footer-info">hello@baysidexyz.com</p>
+      <div class="footer-info-container">
+        <div class="footer-info-content">
+          <p class="footer-info">BAYSIDE, 2022</p>
+          <p class="footer-info">MADE IN TORONTO, CANADA</p>
+        </div>
+      </div>
     </footer>
   </body>
 </html>
