@@ -176,7 +176,6 @@
 
 .team-portrait {
     border-radius: 100px;
-    margin-bottom: 16px !important;
     width:60%;
 }
 
@@ -195,8 +194,8 @@
 }
 
 .team-row {
-    padding-top: 32px !important;
-    padding-bottom: 32px !important;
+    /*padding-top: 32px !important;*/
+    /*padding-bottom: 32px !important;*/
 }
 
 .team-row:after, .team-row:before {
@@ -205,24 +204,20 @@
     clear: both;
 }
 
-.third-col {
+.team-member-col {
     float: left;
     width: 25%;
     text-align: center;
 }
 
 @media (min-width:601px) and (max-width: 992px) {
-    .third-col {
+    .team-member-col {
         width: 50%;
     }
 }
 
 .section-text {
     text-align: justify !important
-}
-
-.team-member-name {
-    text-align: center;
 }
 
 .question-container {
