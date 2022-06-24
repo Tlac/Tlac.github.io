@@ -184,6 +184,8 @@
     margin-left: auto;
     margin-right: auto;
     max-width: 980px;
+    padding-left: 6%;
+    padding-right: 6%;
 }
 
 .section-container:after, .section-container:before {
@@ -240,6 +242,10 @@
 .question-minus {
     align-items: center;
     display: none;
+}
+
+.faq-divider {
+    border-color: #A6A6A6;
 }
 
 /* footer */
@@ -373,3 +379,9 @@ p.footer-info {
 
 /* sandbox */
 
+/* with a 360px width */
+/* 20px padding on each side */
+
+
+
+/* padding bottom for origin section is ~175px; */
