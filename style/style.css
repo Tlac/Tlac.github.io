@@ -10,6 +10,11 @@
 }
 
 @font-face {
+    font-family: ArchivoSemiBold;
+    src: url(Archivo-SemiBold.ttf) format("truetype");
+}
+
+@font-face {
     font-family: DaysOne;
     src: url(DaysOne-Regular.ttf) format("truetype");
 }
@@ -239,6 +244,15 @@
     float: left;
     width: 25%;
     text-align: center;
+}
+
+.team-member-name {
+    font-family: ArchivoSemiBold;
+    margin-bottom: 0;
+}
+
+.team-member-role {
+    margin-top: 0;
 }
 
 @media (max-width: 992px) {
