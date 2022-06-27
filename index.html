@@ -52,12 +52,12 @@
         <hr class="mobile-nav-menu-divider">
         <a href="#faq" onclick="closeNav()">FAQ</a>
         <hr class="mobile-nav-menu-divider">
-        <div style="display:flex; justify-content: space-evenly;">
+        <div class="expanded-nav-logo-container">
           <a href="https://twitter.com" class="nav-item"><img src="./assets/icons/twitter-black.png"></a>
           <a href="https://instagram.com" class="nav-item"><img src="./assets/icons/instagram-black.png"></a>
           <a href="https://discord.com" class="nav-item"><img src="./assets/icons/discord-black.png"></a>
         </div>
-        <div style="padding-top:85px">
+        <div class="expanded-nav-footer">
           <p class="mobile-nav-extended-footer-content">BAYSIDE INC, 2022</p>
           <p class="mobile-nav-extended-footer-content">MADE IN NEW YORK, NEW YORK</p>
           <p class="mobile-nav-extended-footer-content-email">HELLO@BAYSIDEXYZ.com</p>
@@ -90,12 +90,14 @@
 
 
       <!-- OVERVIEW -->
-      <img class="background-image" src="./assets/images/bayside_bar.png">
-      <div class="section-container" id="overview">
-        <p class="section-text">INTRODUCING SEASON 1:</p>
-        <h2 class="section-header">ShipRekt.</h2>
-        <p class="section-text">The markets are down, the ship has crashed and all that’s left to do is to lounge by the bar and have a drink.</p>
-        <p class="section-text">Welcome to Bayside.</p>
+      <div id="overview" class="overview-section">
+        <img class="background-image" src="./assets/images/bayside_bar.png">
+        <div class="section-container shiprekt-container">
+          <p class="shiprekt-content">INTRODUCING SEASON 1:</p>
+          <h2 class="shiprekt-content-header">ShipRekt.</h2>
+          <p class="shiprekt-content">The markets are down, the ship has crashed and all that’s left to do is to lounge by the bar and have a drink.</p>
+          <p class="shiprekt-content">Welcome to Bayside.</p>
+        </div>
       </div>
       <div class="section-container gradient-background">
         <p class="section-solo-info-center">We created Bayside to foster a sense of destination and connection.</p>
@@ -105,7 +107,7 @@
 
       <!-- TEAM -->
       <div class="section-container gradient-background" id="team">
-        <h2 class="section-header">Residents of Bayside.</h2>
+        <h2 class="section-header residents-header">Residents of Bayside.</h2>
         <div class="team-row">
           <div class="team-member-col">
             <img src="./assets/team/brenden_lee.png" class="team-portrait">
@@ -154,14 +156,14 @@
 
       <!-- FAQ -->
       <div class="section-container" id="faq">
-        <h2 class="section-header">FAQ</h2>
+        <h2 class="section-header faq-header">FAQ</h2>
         <div class="question-container">
           <h4>When is Bayside Minting?</h4>
           <div id="whatIsBaysideMiningPlus" class="question-plus" href="javascript:void(0);" onclick="openDropdown('whatIsBaysideMining')">
-            <i class="fa fa-plus" style="font-size:20px"></i>
+            <i class="fa fa-plus plus-minus"></i>
           </div>
           <div id="whatIsBaysideMiningMinus" class="question-minus" href="javascript:void(0);" onclick="closeDropdown('whatIsBaysideMining')">
-            <i class="fa fa-minus" style="font-size:20px"></i>
+            <i class="fa fa-minus plus-minus"></i>
           </div>
         </div>
         
@@ -172,10 +174,10 @@
         <div class="question-container">
           <h4>How do I get early access?</h4>
           <div id="earlyAccessPlus" class="question-plus" href="javascript:void(0);" onclick="openDropdown('earlyAccess')">
-            <i class="fa fa-plus" style="font-size:20px"></i>
+            <i class="fa fa-plus plus-minus"></i>
           </div>
           <div id="earlyAccessMinus" class="question-minus" href="javascript:void(0);" onclick="closeDropdown('earlyAccess')">
-            <i class="fa fa-minus" style="font-size:20px"></i>
+            <i class="fa fa-minus plus-minus"></i>
           </div>
         </div>
 
@@ -186,10 +188,10 @@
         <div class="question-container">
           <h4>When will Discord Launch?</h4>
           <div id="discordPlus" class="question-plus" href="javascript:void(0);" onclick="openDropdown('discord')">
-            <i class="fa fa-plus" style="font-size:20px"></i>
+            <i class="fa fa-plus plus-minus"></i>
           </div>
           <div id="discordMinus" class="question-minus" href="javascript:void(0);" onclick="closeDropdown('discord')">
-            <i class="fa fa-minus" style="font-size:20px"></i>
+            <i class="fa fa-minus plus-minus"></i>
           </div>
         </div>
 
@@ -200,10 +202,10 @@
         <div class="question-container">
           <h4>How do I stay up to date?</h4>
           <div id="upToDatePlus" class="question-plus" href="javascript:void(0);" onclick="openDropdown('upToDate')">
-            <i class="fa fa-plus" style="font-size:20px"></i>
+            <i class="fa fa-plus plus-minus"></i>
           </div>
           <div id="upToDateMinus" class="question-minus" href="javascript:void(0);" onclick="closeDropdown('upToDate')">
-            <i class="fa fa-minus" style="font-size:20px"></i>
+            <i class="fa fa-minus plus-minus"></i>
           </div>
         </div>
 

@@ -180,6 +180,15 @@
     font-size: 8px;
 }
 
+.expanded-nav-logo-container {
+    display:flex;
+    justify-content: space-evenly;
+}
+
+.expanded-nav-footer {
+    padding-top:85px
+}
+
 /* background image section */
 
 .main-background {
@@ -200,6 +209,29 @@
 
 /* sub section */
 
+.overview-section {
+    position:relative;
+}
+
+.shiprekt-content {
+    font-family: ArchivoRegular;
+    font-size: 19px;
+    color: #FFFFFF;
+}
+
+.shiprekt-content-header {
+    font-family: ArchivoExpandedBold;
+    font-style: italic;
+    font-size: 60px;
+    color: #F2F2F2;
+}
+
+.shiprekt-container {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.57) 15.97%, rgba(0, 0, 0, 0.168) 100%);
+}
 .section-header {
     font-family: ArchivoExpandedBold;
     text-decoration: underline;
@@ -210,9 +242,22 @@
     text-decoration-color: #5979B0;
 }
 
+.residents-header {
+    text-decoration-color: #BB4E7B;
+}
+
+.faq-header {
+    text-decoration-color: #d7aac3;
+}
+
 .team-portrait {
     border-radius: 100px;
     width:60%;
+}
+
+.tester {
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.57) 15.97%, rgba(0, 0, 0, 0.168) 100%),
+    url("bayside-bar.png");
 }
 
 .section-container {
@@ -292,6 +337,10 @@
 
 .gradient-background {
     background: linear-gradient(270deg, rgba(158, 175, 203, 0.5) 0%, rgba(189, 197, 210, 0.364948) 52.6%, rgba(189, 197, 210, 0.360938) 60.42%, rgba(217, 217, 217, 0) 100%, #C8B9C6 100%);
+}
+
+.plus-minus {
+    font-size:20px;
 }
 
 /* footer */
