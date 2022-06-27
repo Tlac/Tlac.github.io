@@ -1,4 +1,19 @@
-﻿/* nav bar */
+﻿/* fonts */
+@font-face {
+    font-family: ArchivoExpandedBold;
+    src: url(Archivo_Expanded-Bold.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: ArchivoRegular;
+    src: url(Archivo-Regular.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: DaysOne;
+    src: url(DaysOne-Regular.ttf) format("truetype");
+}
+/* nav bar */
 
 .nav-bar-container {
     position: fixed;
@@ -109,16 +124,17 @@
 
 .mobile-extended-nav-content {
     position: relative;
-    top: 3%;
+    top: 8%;
     width: 100%;
     text-align: center;
     margin-top: 30px;
 }
 
 .mobile-extended-nav a {
+    font-family: ArchivoExpandedBold;
     padding: 8px;
     text-decoration: none;
-    font-size: 36px;
+    font-size: 25px;
     color: #000000;
     display: block;
     transition: 0.3s;
@@ -146,8 +162,17 @@
 }
 
 .mobile-nav-extended-footer-content {
+    font-family: DaysOne;
+    letter-spacing: 3px;
     color: #5979B0;
-    /*font-family: 'Days One'; need to get this font */
+    font-size: 8px;
+}
+
+.mobile-nav-extended-footer-content-email {
+    font-family: DaysOne;
+    letter-spacing: 3px;
+    color: #B24D6E;
+    font-size: 8px;
 }
 
 /* background image section */
@@ -171,7 +196,13 @@
 /* sub section */
 
 .section-header {
-    letter-spacing: 1px;
+    font-family: ArchivoExpandedBold;
+    text-decoration: underline;
+    font-size: 60px;
+}
+
+.origin-header {
+    text-decoration-color: #5979B0;
 }
 
 .team-portrait {
@@ -217,7 +248,9 @@
 }
 
 .section-text {
-    text-align: justify !important
+    font-family: ArchivoRegular;
+    font-size: 19px;
+    font-weight: bold;
 }
 
 .question-container {
@@ -263,8 +296,15 @@
     clear: both;
 }
 
-.origin-section {
-    background: linear-gradient(270deg, rgba(158, 175, 203, 0.5) 0%, rgba(189, 197, 210, 0.364948) 52.6%, rgba(189, 197, 210, 0.360938) 60.42%, rgba(217, 217, 217, 0) 100%, #C8B9C6 100%);
+.section-solo-info {
+    font-family: ArchivoExpandedBold;
+    font-size: 22px;
+}
+
+.section-solo-info-center {
+    font-family: ArchivoExpandedBold;
+    font-size: 22px;
+    text-align: center;
 }
 
 .footer-icon-container {
