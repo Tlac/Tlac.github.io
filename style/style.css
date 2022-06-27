@@ -18,6 +18,7 @@
     font-family: DaysOne;
     src: url(DaysOne-Regular.ttf) format("truetype");
 }
+
 /* nav bar */
 
 .nav-bar-container {
@@ -232,10 +233,20 @@
     height: 100%;
     background: linear-gradient(90deg, rgba(0, 0, 0, 0.57) 15.97%, rgba(0, 0, 0, 0.168) 100%);
 }
+
 .section-header {
     font-family: ArchivoExpandedBold;
     text-decoration: underline;
     font-size: 60px;
+}
+
+.origin-container {
+    position: relative;
+}
+
+.ship-part {
+    position: absolute;
+    bottom: 0;
 }
 
 .origin-header {
