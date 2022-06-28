@@ -256,8 +256,9 @@
 .shiprekt-content-header {
     font-family: ArchivoExpandedBold;
     font-style: italic;
-    font-size: 60px;
+    font-size: 55px;
     color: #F2F2F2;
+    padding-left: 6%
 }
 
 .shiprekt-container {
@@ -289,6 +290,7 @@
 
 .residents-header {
     text-decoration-color: #BB4E7B;
+    line-height: 63px;
 }
 
 .faq-header {
@@ -317,6 +319,15 @@
     content: "";
     display: table;
     clear: both;
+}
+
+.mission-section {
+    padding-bottom: 50px;
+}
+
+.team-section {
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 
 .team-row {
@@ -410,6 +421,10 @@
     font-family: ArchivoExpandedBold;
     font-size: 22px;
     text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .footer-socials-container {
