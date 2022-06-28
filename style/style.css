@@ -249,6 +249,8 @@
     font-family: ArchivoRegular;
     font-size: 19px;
     color: #FFFFFF;
+    padding-left: 6%;
+    padding-right: 6%;
 }
 
 .shiprekt-content-header {
