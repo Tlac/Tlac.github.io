@@ -157,6 +157,13 @@
     font-size: 60px;
 }
 
+.mobile-extended-nav-logo {
+    width: 24%;
+    right: 5%;
+    top: 4%;
+    position: absolute;
+}
+
 .mobile-nav-menu-divider {
     width: 87%;
     border-color: #E4E4E4;
