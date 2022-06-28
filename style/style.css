@@ -201,6 +201,30 @@
     width:100%;
 }
 
+.bayside-logo-on-background {
+    position: absolute;
+    top: 30%;
+    width: 84%;
+    left: 50%;
+    margin-left: -42%;
+}
+
+.enter-logo {
+    position: absolute;
+    bottom: 10%;
+    width: 20%;
+    left: 50%;
+    margin-left: -10%
+}
+
+.down-triangle {
+    position: absolute;
+    bottom: 5%;
+    width: 8%;
+    left: 50%;
+    margin-left: -4%
+}
+
 /* main section */
 
 .main-content-container {
