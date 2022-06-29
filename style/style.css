@@ -177,7 +177,7 @@
 .mobile-nav-extended-footer-content {
     font-family: DaysOne;
     letter-spacing: 3px;
-    color: #5979B0;
+    color: #666666;
     font-size: 8px;
 }
 
@@ -275,6 +275,11 @@
     font-size: 60px;
 }
 
+.owning-bayside-nft {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
 .origin-container {
     position: relative;
 }
@@ -291,6 +296,7 @@
 .residents-header {
     text-decoration-color: #BB4E7B;
     line-height: 63px;
+    font-size: 51px;
 }
 
 .faq-header {
@@ -366,7 +372,6 @@
 .section-text {
     font-family: ArchivoRegular;
     font-size: 19px;
-    font-weight: bold;
 }
 
 .question-container {
@@ -386,6 +391,11 @@
 .question-minus {
     align-items: center;
     display: none;
+}
+
+.faq-question {
+    font-family: ArchivoExpandedBold;
+    font-size: 20px;
 }
 
 .faq-divider {
@@ -457,6 +467,14 @@
 .footer-info-content {
     padding-top: 45px;
     padding-bottom: 45px;
+}
+
+.social-link {
+    width: 12%;
+}
+
+.social-link-icon {
+    width: 100%;
 }
 
 /* generics */
