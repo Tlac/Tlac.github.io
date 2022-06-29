@@ -393,6 +393,10 @@
     display: none;
 }
 
+.faq-link {
+    text-decoration: none;
+}
+
 .faq-question {
     font-family: ArchivoExpandedBold;
     font-size: 20px;
