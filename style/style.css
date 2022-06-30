@@ -309,6 +309,10 @@
     text-decoration-color: #d7aac3;
 }
 
+.mission-text:first-child {
+    padding-bottom: 30px;
+}
+
 .team-portrait {
     border-radius: 1000px;
     width:60%;
@@ -688,8 +692,17 @@ p.footer-info {
         line-height: 32px;
         font-size: 22px;
     }
-    .mission-text:first-child {
-        padding-bottom: 30px;
+
+    .origin-header {
+        padding-top: 75px;
+    }
+    .origin-section-text {
+        font-size: 22px;
+        font-weight: bold;
+        padding-right: 43%;
+    }
+    .section-header {
+        font-size: 69px;
     }
 }
 
