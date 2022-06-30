@@ -17,20 +17,21 @@
   <body>
     <!-- Navbar -->
     <div class="nav-bar-container">
-      <div class="nav-bar">
+      <div class="nav-bar" style="display:flex; align-items: center;"> <!--  justify-content: space-evenly;-->
         <a href="#" class="logo-container">
-          <img class="nav-logo" src="./assets/images/logo.png">
+          <img class="nav-logo" src="./assets/images/logo_black.png">
         </a>
-        <div style="display:flex; align-items: center; justify-content: space-evenly;">
-          <a href="#story"><button class="nav-button nav-item">Story</button></a>
-          <a href="#overview"><button class="nav-button nav-item">Overview</button></a>
-          <a href="#team"><button class="nav-button nav-item">Team</button></a>
-          <a href="#faq"><button class="nav-button nav-item">FAQ</button></a>
+        <a class="nav-bar-link" href="#story">ORIGIN</a>
+        <a class="nav-bar-link" href="#overview">SEASON 1</a>
+        <a class="nav-bar-link" href="#team">MISSION & TEAM</a>
+        <a class="nav-bar-link" href="#faq">FAQ</a>
         
-          <a href="https://twitter.com/bayside_xyz" class="nav-item"><img src="./assets/icons/twitter-black.png"></a>
-          <a href="https://www.instagram.com/bayside_xyz" class="nav-item"><img src="./assets/icons/instagram-black.png"></a>
-        </div>
-
+        <a style="padding-left: 7%" href="https://twitter.com/bayside_xyz" class="nav-item nav-bar-social-link-container">
+          <img class="nav-bar-social-link-icon" src="./assets/icons/twitter-black.png">
+        </a>
+        <a style="padding-left: 3%" href="https://www.instagram.com/bayside_xyz" class="nav-item nav-bar-social-link-container">
+          <img class="nav-bar-social-link-icon" src="./assets/icons/instagram-black.png">
+        </a>
       </div>
     </div>
 
@@ -73,12 +74,24 @@
 
     <div class="main-content-container"> <!-- got rid of margin-top:46px for background behind navbar-->
       <!-- Main Background -->
-      <a href="#story">
+      <a class="mobile-main-background" href="#story">
         <div class="main-background" style="height:100%">
           <img class="background-image" src="./assets/images/bayside-beach.png">
           <div>
             <img class="bayside-logo-on-background" src="./assets/images/logo_black.png">
           </div>
+          <div>
+            <img class="enter-logo" src="./assets/images/enter.png">
+          </div>
+          <div>
+            <img class="down-triangle" src="./assets/images/down_triangle.png">
+          </div>
+        </div>
+      </a>
+
+      <a class="desktop-main-background" href="#story">
+        <div class="main-background" style="height:100%">
+          <img class="background-image" src="./assets/images/bayside_bar_desktop.png">
           <div>
             <img class="enter-logo" src="./assets/images/enter.png">
           </div>
@@ -96,7 +109,8 @@
           <p class="section-text">During the trip, a mysterious issue caused the ship to crash land on the seaside cliffs of an unknown world.</p>
           <p class="section-text">When they got out, they were pleased with their surroundings and met a new friend. He made them a drink and feeling inspired they built a bar out of the broken spaceship.</p>
         </div>
-        <img class="background-image ship-part" src="./assets/images/bayside_ship.png">
+        <img class="background-image mobile-ship-part" src="./assets/images/bayside_ship.png">
+        <img class="background-image desktop-ship-part" src="./assets/images/bayside_ship_desktop.png">
       </div>
 
       <div class="section-container gradient-background owning-bayside-nft">
@@ -116,12 +130,14 @@
       </div>
       <div class="section-container gradient-background mission-section">
         <p class="section-solo-info-center">We created Bayside to foster a sense of destination and connection.</p>
-        <p class="section-text">That mission empowers our brand and is the engine behind our content, story and product experience.</p>
-        <p class="section-text">As creatives and innovators, our goal is to build new ways to amplify the experience of owning an NFT - making it more immersive, rewarding and connective.</p>
+        <div>
+          <p class="mission-text">That mission empowers our brand and is the engine behind our content, story and product experience.</p>
+          <p class="mission-text">As creatives and innovators, our goal is to build new ways to amplify the experience of owning an NFT - making it more immersive, rewarding and connective.</p>
+        </div>
       </div>
 
       <!-- TEAM -->
-      <div class="section-container gradient-background" id="team">
+      <div class="section-container gradient-background residents-section" id="team">
         <h2 class="section-header residents-header">Residents of Bayside.</h2>
         <div class="team-section">
           <div class="team-row">
@@ -172,65 +188,68 @@
       </div>
 
       <!-- FAQ -->
-      <div class="section-container" id="faq">
-        <h2 class="section-header faq-header">FAQ</h2>
-        <div class="question-container">
-          <p class="faq-question">When is Bayside Minting?</p>
-          <div id="whatIsBaysideMiningPlus" class="question-plus" href="javascript:void(0);" onclick="openDropdown('whatIsBaysideMining')">
-            <i class="fa fa-plus plus-minus"></i>
+      <div class="faq-container">
+        <div class="section-container faq-section" id="faq">
+          <h2 class="section-header faq-header">FAQ</h2>
+          <div class="question-container">
+            <p class="faq-question">When is Bayside Minting?</p>
+            <div id="whatIsBaysideMiningPlus" class="question-plus" href="javascript:void(0);" onclick="openDropdown('whatIsBaysideMining')">
+              <i class="fa fa-plus plus-minus"></i>
+            </div>
+            <div id="whatIsBaysideMiningMinus" class="question-minus" href="javascript:void(0);" onclick="closeDropdown('whatIsBaysideMining')">
+              <i class="fa fa-minus plus-minus"></i>
+            </div>
           </div>
-          <div id="whatIsBaysideMiningMinus" class="question-minus" href="javascript:void(0);" onclick="closeDropdown('whatIsBaysideMining')">
-            <i class="fa fa-minus plus-minus"></i>
-          </div>
-        </div>
-        
-        <div>
-          <p id="whatIsBaysideMiningAnswer" class="section-text">Fall 2022</p>
-        </div>
-        <hr class="faq-divider">
-        <div class="question-container">
-          <p class="faq-question">How do I get early access?</p>
-          <div id="earlyAccessPlus" class="question-plus" href="javascript:void(0);" onclick="openDropdown('earlyAccess')">
-            <i class="fa fa-plus plus-minus"></i>
-          </div>
-          <div id="earlyAccessMinus" class="question-minus" href="javascript:void(0);" onclick="closeDropdown('earlyAccess')">
-            <i class="fa fa-minus plus-minus"></i>
-          </div>
-        </div>
 
-        <div>
-          <p id="earlyAccessAnswer" class="section-text">We're building an early community of Bayside residents through IRL events, exclusive merch and online community spaces. To get early access to the project and community - be a regular participant in Twitter, spaces, events and social channels</p>
-        </div>
-        <hr class="faq-divider">
-        <div class="question-container">
-          <p class="faq-question">What's inside the ShipRekt Bar?</p>
-          <div id="discordPlus" class="question-plus" href="javascript:void(0);" onclick="openDropdown('discord')">
-            <i class="fa fa-plus plus-minus"></i>
+          <div>
+            <p id="whatIsBaysideMiningAnswer" class="section-text">Fall 2022</p>
           </div>
-          <div id="discordMinus" class="question-minus" href="javascript:void(0);" onclick="closeDropdown('discord')">
-            <i class="fa fa-minus plus-minus"></i>
+          <hr class="faq-divider">
+          <div class="question-container">
+            <p class="faq-question">How do I get early access?</p>
+            <div id="earlyAccessPlus" class="question-plus" href="javascript:void(0);" onclick="openDropdown('earlyAccess')">
+              <i class="fa fa-plus plus-minus"></i>
+            </div>
+            <div id="earlyAccessMinus" class="question-minus" href="javascript:void(0);" onclick="closeDropdown('earlyAccess')">
+              <i class="fa fa-minus plus-minus"></i>
+            </div>
           </div>
-        </div>
 
-        <div>
-          <p id="discordAnswer" class="section-text">Rumour has it, there's more than meets the eye</p>
-        </div>
-        <hr class="faq-divider">
-        <div class="question-container">
-          <p class="faq-question">How do I stay up to date?</p>
-          <div id="upToDatePlus" class="question-plus" href="javascript:void(0);" onclick="openDropdown('upToDate')">
-            <i class="fa fa-plus plus-minus"></i>
+          <div>
+            <p id="earlyAccessAnswer" class="section-text">We're building an early community of Bayside residents through IRL events, exclusive merch and online community spaces. To get early access to the project and community - be a regular participant in Twitter, spaces, events and social channels</p>
           </div>
-          <div id="upToDateMinus" class="question-minus" href="javascript:void(0);" onclick="closeDropdown('upToDate')">
-            <i class="fa fa-minus plus-minus"></i>
+          <hr class="faq-divider">
+          <div class="question-container">
+            <p class="faq-question">What's inside the ShipRekt Bar?</p>
+            <div id="discordPlus" class="question-plus" href="javascript:void(0);" onclick="openDropdown('discord')">
+              <i class="fa fa-plus plus-minus"></i>
+            </div>
+            <div id="discordMinus" class="question-minus" href="javascript:void(0);" onclick="closeDropdown('discord')">
+              <i class="fa fa-minus plus-minus"></i>
+            </div>
           </div>
-        </div>
 
-        <div>
-          <p id="upToDateAnswer" class="section-text">Follow us on Twitter <a class="faq-link" href="https://twitter.com/bayside_xyz">@Bayside_xyz</a></p>
+          <div>
+            <p id="discordAnswer" class="section-text">Rumour has it, there's more than meets the eye</p>
+          </div>
+          <hr class="faq-divider">
+          <div class="question-container">
+            <p class="faq-question">How do I stay up to date?</p>
+            <div id="upToDatePlus" class="question-plus" href="javascript:void(0);" onclick="openDropdown('upToDate')">
+              <i class="fa fa-plus plus-minus"></i>
+            </div>
+            <div id="upToDateMinus" class="question-minus" href="javascript:void(0);" onclick="closeDropdown('upToDate')">
+              <i class="fa fa-minus plus-minus"></i>
+            </div>
+          </div>
+
+          <div>
+            <p id="upToDateAnswer" class="section-text">Follow us on Twitter <a class="faq-link" href="https://twitter.com/bayside_xyz">@Bayside_xyz</a></p>
+          </div>
         </div>
+        <img class="background-image desktop-bayside-surfboard" style="z-index:-1" src="./assets/images/bayside_surfboard.png">
+        <img class="background-image mobile-bayside-surfboard" src="./assets/images/bayside_surfboard.png">
       </div>
-      <img class="background-image" src="./assets/images/bayside_surfboard.png">
     </div>
 
     <!-- Footer -->
