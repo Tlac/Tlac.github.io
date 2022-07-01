@@ -239,10 +239,6 @@
 
 /* sub section */
 
-.overview-section {
-    position:relative;
-}
-
 .shiprekt-content {
     font-family: ArchivoRegular;
     font-size: 19px;
@@ -271,6 +267,10 @@
     font-family: ArchivoExpandedBold;
     text-decoration: underline;
     font-size: 60px;
+}
+
+.mobile-overview-section, .desktop-overview-section{
+    position: relative
 }
 
 .owning-bayside-nft {
@@ -720,6 +720,42 @@ p.footer-info {
         display: flex;
         justify-content: space-between;
     }
+    .mobile-overview-section {
+        display: none;
+    }
+    .bayside-tree {
+        position: absolute;
+        right: 0;
+    }
+    .desktop-shiprekt-container {
+        padding-left: 100px;
+        padding-right: 50%;
+    }
+
+    .desktop-shiprekt-content-intro {
+        font-family: ArchivoExpandedBold;
+        font-size: 36px;
+        line-height: 50px;
+        letter-spacing: 0.25px;
+    }
+
+    .desktop-shiprekt-content-header {
+        font-style: normal;
+        font-family: ArchivoExpandedBold;
+        font-size: 100px;
+        line-height: 50px;
+        letter-spacing: 0.25px;
+        color: #000000;
+    }
+
+    .desktop-shiprekt-content {
+        font-family: ArchivoRegular;
+        font-weight: bold;
+        font-size: 22px;
+        line-height: 32px;
+        letter-spacing: 0.25px;
+        color: #000000;
+    }
 }
 
 
@@ -737,6 +773,9 @@ p.footer-info {
     }
 
     .faq-footer-social-container {
+        display: none;
+    }
+    .desktop-overview-section {
         display: none;
     }
 }
