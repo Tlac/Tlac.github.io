@@ -8,30 +8,31 @@
     <link rel="stylesheet" href="./assets/fonts/fonts">
     <link rel="stylesheet" href="./assets/fonts/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <style>
-      body {font-family: "Lato", sans-serif}
-    </style>
     <script src="./script/jquery.min.js"></script>
     <script src="./script/script.js"></script>
   </head>
   <body>
     <!-- Navbar -->
     <div class="nav-bar-container">
-      <div class="nav-bar" style="display:flex; align-items: center;"> <!--  justify-content: space-evenly;-->
+      <div class="nav-bar">
         <a href="#" class="logo-container">
           <img class="nav-logo" src="./assets/images/logo_black.png">
         </a>
-        <a class="nav-bar-link" href="#story">ORIGIN</a>
-        <a class="nav-bar-link" href="#overview">SEASON 1</a>
-        <a class="nav-bar-link" href="#team">MISSION & TEAM</a>
-        <a class="nav-bar-link" href="#faq">FAQ</a>
+        <div class="desktop-nav-link-container">
+          <a class="nav-bar-link" href="#story">ORIGIN</a>
+          <a class="nav-bar-link" href="#overview">SEASON 1</a>
+          <a class="nav-bar-link" href="#team">MISSION & TEAM</a>
+          <a class="nav-bar-link" href="#faq">FAQ</a>
+        </div>
         
-        <a style="padding-left: 7%" href="https://twitter.com/bayside_xyz" class="nav-item nav-bar-social-link-container">
-          <img class="nav-bar-social-link-icon" src="./assets/icons/twitter-black.png">
-        </a>
-        <a style="padding-left: 3%" href="https://www.instagram.com/bayside_xyz" class="nav-item nav-bar-social-link-container">
-          <img class="nav-bar-social-link-icon" src="./assets/icons/instagram-black.png">
-        </a>
+        <div class="nav-bar-social-link-container">
+          <a href="https://twitter.com/bayside_xyz" class="nav-item">
+            <img class="nav-bar-social-link-icon" src="./assets/icons/twitter-black.png">
+          </a>
+          <a href="https://www.instagram.com/bayside_xyz" class="nav-item">
+            <img class="nav-bar-social-link-icon" src="./assets/icons/instagram-black.png">
+          </a>
+        </div>
       </div>
     </div>
 
@@ -247,8 +248,19 @@
             <p id="upToDateAnswer" class="section-text">Follow us on Twitter <a class="faq-link" href="https://twitter.com/bayside_xyz">@Bayside_xyz</a></p>
           </div>
         </div>
-        <img class="background-image desktop-bayside-surfboard" style="z-index:-1" src="./assets/images/bayside_surfboard.png">
+        <img class="background-image desktop-bayside-surfboard" src="./assets/images/bayside_surfboard.png">
         <img class="background-image mobile-bayside-surfboard" src="./assets/images/bayside_surfboard.png">
+        <div class="faq-footer-social-container">
+          <p class="desktop-footer-text">KEEP UPDATED, FOLLOW US!</p>
+          <div class="faq-footer-social-icon-container">
+            <a href="https://twitter.com/bayside_xyz">
+              <img class="faq-footer-social-icon" class="" src="./assets/icons/twitter-white.png">
+            </a>
+            <a href="https://www.instagram.com/bayside_xyz/?hl=en">
+              <img class="faq-footer-social-icon" class="" src="./assets/icons/instagram-white.png">
+            </a>
+          </div>
+        </div>
       </div>
     </div>
 
