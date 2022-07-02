@@ -282,6 +282,10 @@
     position: relative;
 }
 
+.origin-section {
+    padding-bottom: 40%;
+}
+
 .mobile-ship-part, .desktop-ship-part {
     position: absolute;
     bottom: 0;
@@ -599,7 +603,7 @@ p.footer-info {
         background: #F9F9F9;
     }
 
-    .footer-container {
+    .footer-info-container {
         display: none;
     }
 
@@ -632,8 +636,8 @@ p.footer-info {
     }
 
     .owning-bayside-nft {
-        padding-top: 182px;
-        padding-bottom: 182px;
+        padding-top: 91px;
+        padding-bottom: 91px;
         padding-left: 242px;
         padding-right: 242px;
         text-align: center;
@@ -652,8 +656,8 @@ p.footer-info {
     }
 
     .mission-section {
-        padding-top: 180px;
-        padding-bottom: 180px;
+        padding-top: 100px;
+        padding-bottom: 100px;
     }
 
     .mission-text {
@@ -680,19 +684,23 @@ p.footer-info {
 
     .faq-container {
         position: relative;
-        height: 1792px;
+        height: 1450px;
     }
 
     .faq-header {
-        padding-top: 120px;
+        padding-top: 100px;
         padding-bottom: 72px;
     }
 
     .mission-text {
-        padding-left: 25%; /*356px static*/
+        padding-left: 25%;
         padding-right: 25%;
         line-height: 32px;
         font-size: 22px;
+    }
+
+    .origin-section {
+        padding-bottom: 32%;
     }
 
     .origin-header {
@@ -707,12 +715,6 @@ p.footer-info {
 
     .section-header {
         font-size: 69px;
-    }
-
-    .faq-footer-social-container {
-        position:absolute;
-        bottom: 200px;
-        left: 150px;
     }
 
     .faq-footer-social-icon-container {
@@ -761,13 +763,30 @@ p.footer-info {
     }
 
     .residents-header {
-        padding-top: 180px;
+        padding-top: 100px;
     }
 }
 
 @media (max-width:1450px) {
     .bayside-tree {
         width: 42%;
+    }
+}
+@media (min-width:1451px) {
+    .bayside-tree {
+        width: 36%;
+    }
+}
+
+@media (min-width: 1550px) {
+    .faq-container {
+        height: 1600px;
+    }
+}
+
+@media (min-width: 2200px) {
+    .faq-container {
+        height: 1800px;
     }
 }
 
@@ -781,10 +800,6 @@ p.footer-info {
     }
 
     .desktop-bayside-surfboard {
-        display: none;
-    }
-
-    .faq-footer-social-container {
         display: none;
     }
     .desktop-overview-section {
