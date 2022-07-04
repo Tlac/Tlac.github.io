@@ -424,6 +424,53 @@
     letter-spacing: 2.5px;
 }
 
+.twitter-social-button-container {
+    padding-top: 100px;
+}
+
+.twitter-social-bar-button {
+    box-sizing: border-box;
+    width: 308px;
+    height: 64px;
+    background: #FFFFFF;
+    border: 2px solid #2E2E2E;
+    color: #2E2E2E;
+    border-radius: 35px;
+    font-family: ArchivoExpandedBold;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.twitter-social-bar-button:hover {
+    background: #2E2E2E;
+    color: #FFFFFF;
+}
+
+.twitter-social-bar-button-icon-white {
+    display: none;
+}
+.twitter-social-bar-button:hover .twitter-social-bar-button-icon-black {
+    display: none;
+}
+
+.twitter-social-bar-button:hover .twitter-social-bar-button-icon-white {
+    display: inline;
+}
+
+.twitter-social-bar-button-text {
+    font-size: 14px;
+    margin-top: 19px;
+}
+
+.twitter-social-bar-button-icon-black, .twitter-social-bar-button-icon-white{
+    width: 20px;
+    height: 16.5px;
+    margin-top: 21px;
+    margin-left: 10px;
+}
+
+
 /* footer */
 
 .footer-container {
