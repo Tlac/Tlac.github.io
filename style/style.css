@@ -86,8 +86,9 @@
     display:flex;
     align-items: center;
     justify-content: space-between;
-    width: 50%;
+    width: 55%;
 }
+
 /* mobile nav bar */
 
 .mobile-nav-bar-container {
@@ -134,7 +135,7 @@
     margin-top: 30px;
 }
 
-.mobile-extended-nav a {
+.mobile-extended-nav-link {
     font-family: ArchivoExpandedBold;
     padding: 8px;
     text-decoration: none;
@@ -142,10 +143,6 @@
     color: #000000;
     display: block;
     transition: 0.3s;
-}
-
-.mobile-extended-nav a:hover, .mobile-extended-nav a:focus { /* change this for hover color change */
-    color: #000000;
 }
 
 .mobile-extended-nav .closebtn {
@@ -184,6 +181,7 @@
     letter-spacing: 3px;
     color: #B24D6E;
     font-size: 8px;
+    text-decoration: none;
 }
 
 .expanded-nav-logo-container {
@@ -510,7 +508,6 @@ body {
 
 footer {
     display: block;
-    font-size: 24px;
 }
 
 a {
@@ -579,12 +576,13 @@ a {
     color: inherit
 }
 
-p.footer-info {
+p.footer-info, a.footer-info {
     margin-top: 0;
     margin-bottom: 0;
     font-family: DaysOne;
     letter-spacing: 2px;
     font-size: 11px;
+    text-decoration: none;
 }
 
 /* responsiveness */
@@ -601,10 +599,6 @@ p.footer-info {
 
     .residents-section {
         background: #F9F9F9;
-    }
-
-    .footer-info-container {
-        display: none;
     }
 
     .enter-logo {
@@ -765,6 +759,11 @@ p.footer-info {
 
     .residents-header {
         padding-top: 100px;
+    }
+
+    .footer-info {
+        padding-top: 2px;
+        padding-bottom: 2px;
     }
 }
 
