@@ -425,7 +425,7 @@
 }
 
 .twitter-social-button-container {
-    padding-top: 100px;
+    padding-top: 60px;
 }
 
 .twitter-social-bar-button {
@@ -851,5 +851,9 @@ p.footer-info, a.footer-info {
     }
     .desktop-overview-section {
         display: none;
+    }
+    .twitter-social-button-container {
+        padding-left: 6%;
+        padding-top: 30px;
     }
 }
