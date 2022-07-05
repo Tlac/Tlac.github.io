@@ -201,7 +201,7 @@
 }
 
 .background-image {
-    width:100%;
+    width: 100%;
 }
 
 .bayside-logo-on-background {
@@ -309,7 +309,7 @@
 
 .team-portrait {
     border-radius: 1000px;
-    width:60%;
+    width: 60%;
 }
 
 .tester {
@@ -517,7 +517,7 @@
     display: flex;
     justify-content: space-evenly;
     padding-top: 29px;
-    width: 400px;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
 }
