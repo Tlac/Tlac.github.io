@@ -96,6 +96,8 @@
     background-color: #FFFFFF;
     position: relative;
     height: 72px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .mobile-nav-bar-container a {
@@ -147,15 +149,13 @@
 
 .mobile-extended-nav .closebtn {
     position: absolute;
-    top: -16px;
-    left: 7px;
+    top: -22px;
+    right: 0;
     font-size: 60px;
 }
 
 .mobile-extended-nav-logo {
     width: 24%;
-    right: 12px;
-    top: 20px;
     position: absolute;
 }
 
@@ -193,6 +193,11 @@
     padding-top:85px
 }
 
+.mobile-palm-tree-icon-container {
+    width: 45px;
+    padding-top: 10px;
+    padding-left: 10px;
+}
 /* background image section */
 
 .main-background {
