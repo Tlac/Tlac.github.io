@@ -100,13 +100,6 @@
     justify-content: space-between;
 }
 
-.mobile-nav-bar-container a {
-    padding: 17px 16px;
-    text-decoration: none;
-    font-size: 17px;
-    display: block;
-}
-
 @media (min-width:1051px) {
     .mobile-nav-bar-container {
         display: none;
@@ -154,7 +147,7 @@
     font-size: 60px;
 }
 
-.palm-tree-logo {
+.palm-tree-logo, .mobile-nav-bar-twitter-logo{
     width: 100%;
 }
 
@@ -197,6 +190,11 @@
     padding-top: 10px;
     padding-left: 10px;
 }
+.mobile-twitter-icon-container {
+    width: 45px;
+    padding-top: 17px;
+    padding-right: 10px;
+}
 /* background image section */
 
 .main-background {
@@ -231,10 +229,17 @@
     left: 4%;
 }
 
-.bucket-list-button-container {
+.bucket-list-button-container-desktop {
     position: absolute;
     top: 6%;
     right: 4%;
+}
+
+.bucket-list-button-container-mobile {
+    position: absolute;
+    bottom: 13%;
+    left: 50%;
+    margin-left: -154px;
 }
 
 .bayside-white-twitter-logo {
@@ -451,7 +456,7 @@
     padding-top: 60px;
 }
 
-.twitter-social-bar-button {
+.bayside-button {
     box-sizing: border-box;
     width: 308px;
     height: 64px;
@@ -465,28 +470,28 @@
     text-decoration: none;
 }
 
-.twitter-social-bar-button:hover {
+.bayside-button:hover {
     background: #2E2E2E;
     color: #FFFFFF;
 }
 
-.twitter-social-bar-button-icon-white {
+.bayside-button-icon-white {
     display: none;
 }
-.twitter-social-bar-button:hover .twitter-social-bar-button-icon-black {
+.bayside-button:hover .bayside-button-icon-black {
     display: none;
 }
 
-.twitter-social-bar-button:hover .twitter-social-bar-button-icon-white {
+.bayside-button:hover .bayside-button-icon-white {
     display: inline;
 }
 
-.twitter-social-bar-button-text {
+.bayside-button-text {
     font-size: 14px;
     margin-top: 19px;
 }
 
-.twitter-social-bar-button-icon-black, .twitter-social-bar-button-icon-white{
+.bayside-button-icon-black, .bayside-button-icon-white{
     width: 20px;
     height: 16.5px;
     margin-top: 21px;
