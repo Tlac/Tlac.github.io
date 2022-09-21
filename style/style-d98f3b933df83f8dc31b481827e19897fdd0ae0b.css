@@ -224,6 +224,25 @@
     margin-left: -10%
 }
 
+.bayside-white-logo {
+    position: absolute;
+    top: 6%;
+    width: 20%;
+    left: 4%;
+}
+
+.bucket-list-button-container {
+    position: absolute;
+    top: 6%;
+    right: 4%;
+}
+
+.bayside-white-twitter-logo {
+    position: absolute;
+    bottom: 6%;
+    right: 4%;
+}
+
 .down-triangle {
     position: absolute;
     bottom: 5%;
