@@ -1,0 +1,112 @@
+@font-face {
+    font-family: ArchivoExpandedBold;
+    src: url(Archivo_Expanded-Bold.ttf) format("truetype");
+}
+html, body {
+    /*max-width: 100%;*/
+    overflow-y: hidden;
+}
+.container {
+    position: relative;
+    overflow: hidden;
+    /*optionally set height and width, it will depend on the rest of the styling used*/
+}
+/* mobile nav */
+.mobile-nav {
+    overflow: hidden;
+    background-color: #FFFFFF;
+    position: relative;
+    height: 72px;
+    display: flex;
+    justify-content: space-between;
+}
+.mobile-palm-tree-icon-container {
+    width: 45px;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+.palm-tree-logo, .mobile-nav-bar-twitter-logo{
+    width: 100%;
+}
+.mobile-twitter-icon-container {
+    width: 45px;
+    padding-top: 17px;
+    padding-right: 10px;
+}
+/* mobile content */
+.mobile-background {
+    margin-left: 50%;
+    transform: translateX(-50%);
+    height: 100%;
+}
+
+/* bayside button */
+.bucket-list-button-container-mobile {
+    position: absolute;
+    top: 13%;
+    left: 50%;
+    margin-left: -154px;
+}
+
+.bayside-button {
+    box-sizing: border-box;
+    width: 308px;
+    height: 64px;
+    background: #FFFFFF;
+    border: 2px solid #2E2E2E;
+    color: #2E2E2E;
+    border-radius: 35px;
+    font-family: ArchivoExpandedBold;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.bayside-button:hover {
+    background: #2E2E2E;
+    color: #FFFFFF;
+}
+.bayside-button-text {
+    font-size: 14px;
+    margin-top: 22px;
+}
+
+/* desktop content */
+.desktop-content {
+    display: none;
+}
+.desktop-background {
+    height: 100%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+.bucket-list-button-container-desktop {
+    position: absolute;
+    top: 6%;
+    right: 4%;
+}
+.bayside-white-logo {
+    position: absolute;
+    top: 6%;
+    width: 20%;
+    left: 4%;
+}
+.bayside-white-twitter-logo {
+    position: absolute;
+    bottom: 6%;
+    right: 4%;
+}
+.nav-bar-social-link-icon {
+    height: 100%;
+}
+@media (min-width:1051px) {
+    .mobile-nav {
+        display: none;
+    }
+    .mobile-content {
+        display: none;
+    }
+    .desktop-content {
+        display: inline
+    }
+}
