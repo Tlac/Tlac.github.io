@@ -65,7 +65,7 @@ html, body {
 .bayside-button-mobile {
     box-sizing: border-box;
     width: 180px;
-    height: 64px;
+    height: 42px;
     background: #FFFFFF;
     border: 2px solid #2E2E2E;
     color: #2E2E2E;
@@ -85,6 +85,11 @@ html, body {
     margin-top: 22px;
 }
 
+.bayside-button-text-mobile {
+    font-size: 14px;
+    margin-top: 12px;
+}
+
 /* desktop content */
 .desktop-content {
     display: none;
@@ -101,7 +106,7 @@ html, body {
 }
 .bayside-white-logo {
     position: absolute;
-    top: 6%;
+    top: 6.5%;
     width: 20%;
     left: 4%;
 }
