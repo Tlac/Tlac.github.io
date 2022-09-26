@@ -20,9 +20,10 @@ html, body {
     justify-content: space-between;
 }
 .mobile-palm-tree-icon-container {
+    position: absolute;
     width: 45px;
-    padding-top: 10px;
-    padding-left: 10px;
+    top: 2%;
+    left: 2%;
 }
 .palm-tree-logo, .mobile-nav-bar-twitter-logo{
     width: 100%;
@@ -43,9 +44,8 @@ html, body {
 /* bayside button */
 .bucket-list-button-container-mobile {
     position: absolute;
-    top: 13%;
-    left: 50%;
-    margin-left: -154px;
+    top: 2%;
+    right: 2%;
 }
 
 .bayside-button {
