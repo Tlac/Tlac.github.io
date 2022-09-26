@@ -62,6 +62,20 @@ html, body {
     text-decoration: none;
 }
 
+.bayside-button-mobile {
+    box-sizing: border-box;
+    width: 180px;
+    height: 64px;
+    background: #FFFFFF;
+    border: 2px solid #2E2E2E;
+    color: #2E2E2E;
+    border-radius: 35px;
+    font-family: ArchivoExpandedBold;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+}
+
 .bayside-button:hover {
     background: #2E2E2E;
     color: #FFFFFF;
