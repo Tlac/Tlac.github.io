@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/Tlac.github.io/static/css/main.d43fa4ee.css",
-    "main.js": "/Tlac.github.io/static/js/main.aded8748.js",
+    "main.js": "/Tlac.github.io/static/js/main.84e9232e.js",
     "static/js/453.ef346610.chunk.js": "/Tlac.github.io/static/js/453.ef346610.chunk.js",
     "static/media/gyoza.png": "/Tlac.github.io/static/media/gyoza.54d37e66e7d5c72f70f7.png",
     "index.html": "/Tlac.github.io/index.html",
     "main.d43fa4ee.css.map": "/Tlac.github.io/static/css/main.d43fa4ee.css.map",
-    "main.aded8748.js.map": "/Tlac.github.io/static/js/main.aded8748.js.map",
+    "main.84e9232e.js.map": "/Tlac.github.io/static/js/main.84e9232e.js.map",
     "453.ef346610.chunk.js.map": "/Tlac.github.io/static/js/453.ef346610.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d43fa4ee.css",
-    "static/js/main.aded8748.js"
+    "static/js/main.84e9232e.js"
   ]
 }
